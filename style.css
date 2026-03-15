@@ -1,0 +1,77 @@
+
+
+body {
+    margin: 0;
+    background-color: #111111;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 80px;
+    align-items:center;
+    padding: 0 30px 0 30px;
+    font-size: 22px;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header > nav {
+    margin: 0;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,0.2);
+    border-radius: 40px;
+    height: 45px;
+
+    font-family: "Fjalla One", sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+header > nav > ul a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav > ul {
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li  a {
+    margin: 0 30px 0 30px;
+}
+
+header > div:last-child {
+    width: 100px;
+    height: 45px;
+    background: #ffffff;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header > div:last-child > a {
+    text-decoration: none;
+    font-family: "Fjalla One", sans-serif;
+    padding: 10px;
+    color: #111111;
+}
+
+#logo {
+    font-family: "Changa One", sans-serif;
+}

@@ -3,6 +3,11 @@
 body {
     margin: 0;
     background-color: #111111;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
 }
 
 * {
@@ -74,4 +79,39 @@ header > div:last-child > a {
 
 #logo {
     font-family: "Changa One", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footer.nameTxt {
+    font-size: 520px;
+    font-family: "Luckiest Guy", cursive;
+
+    position: relative;
+    top: 110px;
+}
+
+.footer.copyrightTxt {
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
 }

@@ -96,7 +96,7 @@ header > div:last-child > a {
     width: 100%;
     height: fit-content;
     position: relative;
-    top: 345px;
+    /*top: 345px;*/
 
     z-index: 2;
 }
@@ -328,14 +328,14 @@ footer {
 }
 
 .footer.nameTxt {
+    line-height: 0.3;
+    display: block;
     font-size: 520px;
     font-family: "Luckiest Guy", cursive;
-
-    position: relative;
-    top: 110px;
 }
 
 .footer.copyrightTxt {
     font-size: 15px;
     font-family: "Poppins", sans-serif;
+    margin: 155px 0 0 0;
 }

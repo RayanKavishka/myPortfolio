@@ -19,7 +19,7 @@ header {
     width: 100%;
     height: 80px;
     align-items:center;
-    padding: 0 30px 0 30px;
+    padding: 0 60px 0 60px;
     font-size: 22px;
     color: #ffffff;
 
@@ -80,6 +80,92 @@ header > div:last-child > a {
 #logo {
     font-family: "Changa One", sans-serif;
 }
+
+
+
+
+
+
+
+
+
+
+
+/* Contact Section */
+#contactSection {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    top: 345px;
+
+    z-index: 3;
+}
+
+#backgroundVector {
+    width: 100%;
+    height: 1356px;
+    background-color: #E10600;
+
+    clip-path: polygon(
+            0% 5%, 5% 2%, 10% 6%, 15% 3%, 20% 7%, 28% 1%,
+            35% 8%, 43% 4%, 50% 10%, 58% 2%, 65% 7%, 72% 3%,
+            80% 9%, 88% 5%, 95% 10%, 100% 4%, 100% 94%, 95% 98%,
+            90% 95%, 82% 99%, 75% 94%, 68% 97%, 60% 92%, 52% 99%,
+            45% 95%, 38% 100%, 30% 94%, 21% 98%, 16% 93%, 7% 96%, 3% 94%, -1% 92%
+    );
+}
+
+/* Contact Head */
+.contactHeader {
+    /*margin: 200px 0 0 0;*/
+    padding: 0 60px 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+    top: 360px;
+
+    z-index: 4;
+}
+
+#headText {
+    width: 400px;
+    height: 120px;
+
+    border: 3px solid #ffffff;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 100px;
+    color: #ffffff;
+    background: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contactMyImage {
+    position: relative;
+    top: 170px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

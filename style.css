@@ -149,6 +149,34 @@ header > div:last-child > a {
     top: 170px;
 }
 
+/* Contact Top Left Section */
+#topLeft {
+    margin: 0 0 0 60px;
+    height: fit-content;
+    width: 640px;
+    text-align: left;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+    top: 200px;
+}
+
+#head {
+    margin: 0;
+    width: 518px;
+    font-family: "Changa One", sans-serif;
+    font-size: 50px;
+}
+
+#content {
+    margin: 0;
+    font-family: "Caveat Brush", cursive;
+    font-size: 25px;
+}
+
 
 
 

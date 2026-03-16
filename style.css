@@ -239,37 +239,84 @@ header > div:last-child > a {
     width: 370px;
 }
 
+/* Contact Bottom Right Section */
+#contactForm {
+    margin: 0 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    bottom: 415px;
+    left: calc(100% - 660px);
+}
 
+.input {
+    width: 600px;
+    height: 65px;
+    font-family: "Changa One", sans-serif;
+    font-size: 25px;
+    padding: 0 0 0 20px;
+    background:
+            repeating-linear-gradient(
+                    45deg,
+                    #f3f3f3,
+                    #f3f3f3 2px,
+                    #ededed 2px,
+                    #ededed 4px
+            );
+    clip-path: polygon(
+            0% 12%, 5% 5%, 10% 12%, 15% 4%, 20% 10%, 25% 5%,
+            30% 12%, 35% 6%, 40% 14%, 45% 5%, 50% 13%, 55% 4%,
+            60% 12%, 65% 6%, 70% 14%, 75% 5%, 80% 12%, 85% 4%,
+            90% 10%, 95% 6%, 100% 12%,
 
+            98% 15%, 99% 28%, 97% 33%, 99% 51%,
+            97% 62%, 99% 74%, 98% 85%, 100% 93%,
 
+            95% 95%, 90% 88%, 85% 97%, 80% 90%,
+            75% 96%, 70% 88%, 65% 94%, 60% 86%,
+            55% 96%, 50% 88%, 45% 94%, 40% 86%,
+            35% 97%, 30% 90%, 25% 96%, 20% 88%,
+            15% 94%, 10% 89%, 5% 95%,
 
+            0% 95%, 2% 76%, 1% 70%, 2% 59%,
+            0% 49%, 2% 36%, 1% 26%, 2% 22%
+    );
+}
 
+#subjectField, #msgField {
+    padding: 0 0 0 30px;
+    position: relative;
+    width: 800px;
+    right: 200px;
+}
 
+#msgField {
+    padding: 25px 0 0 30px;
+    height: 180px;
+    resize: none;
+}
 
+button {
+    background: #000000;
+    width: 120px;
+    height: 45px;
+    color: #ffffff;
+    border-radius: 20px;
 
+    font-family: "Fjalla One", sans-serif;
+    font-size: 25px;
+}
 
+.buttons {
+    width: fit-content;
+    position: relative;
+    left: 306px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
 
 /* Footer */
 footer {

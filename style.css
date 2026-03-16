@@ -96,8 +96,7 @@ header > div:last-child > a {
     width: 100%;
     height: fit-content;
     position: relative;
-    /*top: 345px;*/
-
+    padding: 145px 0 0 0;
     z-index: 2;
 }
 
@@ -124,8 +123,7 @@ header > div:last-child > a {
     align-items: center;
     justify-content: space-between;
 
-    position: relative;
-    top: 360px;
+    position: absolute;
 
     z-index: 2;
 }
@@ -143,13 +141,17 @@ header > div:last-child > a {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: absolute;
+    top: -11px;
+    margin: 0;
 }
 
 #contactMyImage {
     width: 314px;
     position: relative;
-    top: 110px;
-    right: 160px;
+    left: 925px;
+    bottom: 155px;
 }
 
 /* Contact Top Left Section */

@@ -106,9 +106,8 @@ header > div:last-child > a {
     );
 
     position: absolute;
-    top: 0;
+    top: 110px;
     right: 0;
-    bottom: 500px;
     left: 200px;
     margin: auto;
 
@@ -141,6 +140,41 @@ header > div:last-child > a {
     bottom: 230px;
     transform: rotate(-3.5deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

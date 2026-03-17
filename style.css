@@ -88,7 +88,7 @@ header > div:last-child > a {
 /* Hero Section */
 #heroSection {
     width: 100%;
-    min-height: 100vh;
+    height: 745px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -142,6 +142,11 @@ header > div:last-child > a {
 }
 
 /* Hello Right Section */
+#heroRight {
+    width: 0;
+    height: 0;
+}
+
 #rayanTxt {
     margin: 0;
     font-family: "Luckiest Guy", cursive;
@@ -182,26 +187,88 @@ header > div:last-child > a {
     transform: rotate(-4.8deg);
 }
 
+/* Hello Bottom Section */
+.scrollingText {
+    text-align: center;
+    padding: 10px 0 10px 0;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+    user-select: none;
+}
 
+.listContainer {
+    min-width: 100%;
+    list-style: none;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
 
+.listContainer:hover {
+    animation-play-state: paused;
+}
 
+.listContainer.big {
+    background: #000000;
+}
 
+.listContainer.small {
+    background: #ffffff;
+}
 
+#backTap1, #backTap2 {
+    position: relative;
+    right: 32px;
+}
 
+.text, .text1 {
+    margin: 0 30px 0 0;
+    font-family: 'Compacta', sans-serif;
+}
 
+.text {
+    color: var(--theme-color-blue);
+    font-size: 70px;
+}
 
+.text1 {
+    color: var(--theme-color-orange);
+    font-size: 60px;
+}
 
+.listContainer.big i {
+    font-size: 35px;
+    position: relative;
+    bottom: 12px;
+}
 
+.listContainer.small i {
+    font-size: 30px;
+    position: relative;
+    bottom: 10px;
+}
 
+#heroBottom {
+    position: relative;
+    bottom: 358px;
+}
 
+.scrollingText.main {
+    position: relative;
+    top: 20px;
+    transform: rotate(3deg);
 
+    z-index: 12;
+}
 
-
-
-
-
-
-
+.scrollingText.second {
+    position: relative;
+    bottom: 120px;
+    transform: rotate(-5deg);
+}
 
 
 
@@ -228,7 +295,7 @@ header > div:last-child > a {
     height: fit-content;
     position: relative;
     padding: 145px 0 0 0;
-    z-index: 2;
+    z-index: 11;
 }
 
 #backgroundVector {
@@ -458,6 +525,8 @@ footer {
     justify-content: center;
     text-align: center;
     color: #ffffff;
+
+    z-index: 5;
 }
 
 .footer.nameTxt {

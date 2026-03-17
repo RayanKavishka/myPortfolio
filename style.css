@@ -15,6 +15,7 @@ body {
 
 * {
     box-sizing: border-box;
+    z-index: 10;
 }
 
 /* Header */
@@ -84,8 +85,35 @@ header > div:last-child > a {
     font-family: "Changa One", sans-serif;
 }
 
+/* Hero Section */
+#heroSection {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
 
+/* Background Vector */
+#heroSection > div:last-child {
+    width: 1000px;
+    height: 444px;
+    background: var(--theme-color-orange);
+    clip-path: polygon(
+            0% 18%, 7% 5%, 16% 17%, 24% 6%, 29% 15%, 38% 7%, 44% 17%, 52% 4%, 62% 11%, 72% 0%, 77% 14%, 88% 0%,  86% 14%,
+            92% 24%, 96% 30%, 90% 38%, 111% 63%, 100% 50%, 92% 63%, 99% 71%, 95% 80%, 100% 90%, 92% 91%, 100% 110%,
+            81% 100%, 70% 97%, 45% 95%, 15% 95%, 3% 90%, 0% 50%
+    );
 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 500px;
+    left: 200px;
+    margin: auto;
+
+    z-index: 2;
+}
 
 
 

@@ -133,7 +133,14 @@ header > div:last-child > a {
     color: var(--theme-color-orange);
 }
 
-
+/* Hello Left Section */
+#myImageHero {
+    width: 320px;
+    position: relative;
+    left: 180px;
+    bottom: 230px;
+    transform: rotate(-3.5deg);
+}
 
 
 

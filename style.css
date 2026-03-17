@@ -213,10 +213,12 @@ header > div:last-child > a {
 
 .listContainer.big {
     background: #000000;
+    animation: scrollXBig 25s linear infinite reverse;
 }
 
 .listContainer.small {
     background: #ffffff;
+    animation: scrollXSmall 20s linear infinite;
 }
 
 #backTap1, #backTap2 {
@@ -270,7 +272,16 @@ header > div:last-child > a {
     transform: rotate(-5deg);
 }
 
-
+@keyframes scrollXBig {
+    to {
+        transform: translateX(-100%);
+    }
+}
+@keyframes scrollXSmall {
+    to {
+        transform: translateX(-100%);
+    }
+}
 
 
 

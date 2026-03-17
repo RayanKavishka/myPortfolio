@@ -1,4 +1,7 @@
-
+:root {
+    --theme-color-orange: #E10600;
+    --theme-color-blue: #1C47D2;
+}
 
 body {
     margin: 0;
@@ -103,7 +106,7 @@ header > div:last-child > a {
 #backgroundVector {
     width: 100%;
     height: 1356px;
-    background-color: #E10600;
+    background-color: var(--theme-color-orange);
 
     clip-path: polygon(
             0% 5%, 5% 2%, 10% 6%, 15% 3%, 20% 7%, 28% 1%,
@@ -294,7 +297,7 @@ header > div:last-child > a {
 }
 
 #msgField {
-    padding: 25px 0 0 30px;
+    padding: 25px 25px 0 30px;
     height: 180px;
     resize: none;
 }

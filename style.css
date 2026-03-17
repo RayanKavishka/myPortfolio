@@ -141,7 +141,46 @@ header > div:last-child > a {
     transform: rotate(-3.5deg);
 }
 
+/* Hello Right Section */
+#rayanTxt {
+    margin: 0;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 180px;
+    font-weight: normal;
+    color: #ffffff;
+    letter-spacing: 12px;
+    text-shadow: 10px 7px 10px #000000;
 
+    position: relative;
+    bottom: 640px;
+    left: 520px;
+}
+
+#rTxt {
+    color: #000000;
+    text-shadow: 10px 7px #ffffff;
+}
+
+#kavishkaTxt {
+    width: fit-content;
+    height: fit-content;
+    padding: 0 20px 0 20px;
+    margin: 0;
+
+    font-family: "Luckiest Guy", cursive;
+    font-size: 90px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 5px;
+
+    background: #000000;
+
+    position: relative;
+    bottom: 685px;
+    left: 680px;
+
+    transform: rotate(-4.8deg);
+}
 
 
 

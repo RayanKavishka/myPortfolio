@@ -115,6 +115,26 @@ header > div:last-child > a {
     z-index: 2;
 }
 
+/* Hello Text */
+#heroSection > h1 {
+    font-family: 'Compacta', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+    bottom: 55px;
+}
+
+#heroSection > h1 > span {
+    color: var(--theme-color-orange);
+}
+
+
+
 
 
 

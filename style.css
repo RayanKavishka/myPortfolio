@@ -221,11 +221,6 @@ header > div:last-child > a {
     animation: scrollXSmall 20s linear infinite;
 }
 
-#backTap1, #backTap2 {
-    position: relative;
-    right: 32px;
-}
-
 .text, .text1 {
     margin: 0 30px 0 0;
     font-family: 'Compacta', sans-serif;
@@ -270,6 +265,13 @@ header > div:last-child > a {
     position: relative;
     bottom: 120px;
     transform: rotate(-5deg);
+}
+
+#backTap1, #backTap2 {
+    position: relative;
+    right: 33px;
+
+    z-index: 1;
 }
 
 @keyframes scrollXBig {

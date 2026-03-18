@@ -434,7 +434,25 @@ header > div:last-child > a {
     color: #ffffff;
 }
 
+/* About Bottom Section */
+.aboutBottom {
+    width: fit-content;
+    height: fit-content;
 
+    position: absolute;
+    top: 180px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.aboutBottom > h1 {
+    margin: 0;
+    font-family: 'Thunder Black', sans-serif;
+    font-size: 400px;
+    color: #ffffff;
+}
 
 
 /*======================================================================================================================================*/

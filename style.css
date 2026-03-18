@@ -19,6 +19,10 @@ body {
     z-index: 10;
 }
 
+
+/*======================================================================================================================================*/
+
+
 /* Header */
 header {
     width: 100%;
@@ -86,10 +90,14 @@ header > div:last-child > a {
     font-family: "Changa One", sans-serif;
 }
 
+
+/*======================================================================================================================================*/
+
+
 /* Hero Section */
 #heroSection {
     width: 100%;
-    height: 745px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -292,20 +300,22 @@ header > div:last-child > a {
 }
 
 
+/*======================================================================================================================================*/
+
+
+/* About Section */
+#aboutSection {
+    width: 100%;
+    height: 400px;
+    background: #000000;
+
+    position: relative;
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+/*======================================================================================================================================*/
 
 
 /* Contact Section */
@@ -313,7 +323,7 @@ header > div:last-child > a {
     width: 100%;
     height: fit-content;
     position: relative;
-    padding: 145px 0 0 0;
+    padding: 200px 0 0 0;
     z-index: 11;
 }
 

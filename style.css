@@ -392,6 +392,21 @@ header > div:last-child > a {
     margin: auto;
 }
 
+/* About Left Section */
+.aboutLeft {
+    width: 400px;
+    height: 100px;
+    background: url("/assets/signature.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+    bottom: 100px;
+    left: -14px;
+}
+
+
 
 
 /*======================================================================================================================================*/

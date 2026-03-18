@@ -312,6 +312,68 @@ header > div:last-child > a {
     position: relative;
 }
 
+/* About Top Section */
+.aboutTop {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    position: relative;
+    bottom: 250px;
+}
+
+.banner {
+    margin: 0;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 40px;
+    font-weight: normal;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    place-self: center;
+}
+
+.country {
+    width: 240px;
+    height: 60px;
+    background: var(--theme-color-orange);
+
+    transform: rotate(-7deg);
+}
+
+.bDay {
+    width: 240px;
+    height: 60px;
+    background: var(--theme-color-blue);
+
+    position: relative;
+    right: 60px;
+    transform: rotate(5deg);
+}
+
+.age {
+    width: 180px;
+    height: 60px;
+    background: var(--theme-color-blue);
+
+    position: relative;
+    left: 65px;
+    top: 100px;
+    transform: rotate(7deg);
+}
+
+.city {
+    width: 220px;
+    height: 60px;
+    background: var(--theme-color-orange);
+
+    position: relative;
+    left: 75px;
+    top: 100px;
+    transform: rotate(-7deg);
+}
 
 
 

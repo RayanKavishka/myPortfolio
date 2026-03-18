@@ -237,12 +237,12 @@ header > div:last-child > a {
 
 .listContainer.big {
     background: #000000;
-    animation: scrollXBig 50s linear infinite reverse;
+    animation: scrollXBig 50s linear infinite;
 }
 
 .listContainer.small {
     background: #ffffff;
-    animation: scrollXSmall 30s linear infinite;
+    animation: scrollXSmall 30s linear infinite reverse;
 }
 
 .text, .text1 {

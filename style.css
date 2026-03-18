@@ -406,6 +406,34 @@ header > div:last-child > a {
     left: -14px;
 }
 
+/* About Right Section */
+.aboutRight {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    position: absolute;
+    right: 60px;
+    bottom: 320px;
+}
+
+.aboutRight > a {
+    text-decoration: none;
+    width: 150px;
+    height: 45px;
+    background: #000000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #ffffff;
+    padding: 20px 0;
+
+    font-family: "Fjalla One", sans-serif;
+    font-size: 25px;
+    color: #ffffff;
+}
+
 
 
 

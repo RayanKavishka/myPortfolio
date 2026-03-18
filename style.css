@@ -1,3 +1,4 @@
+
 :root {
     --theme-color-orange: #E10600;
     --theme-color-blue: #1C47D2;
@@ -100,7 +101,7 @@ header > div:last-child > a {
     height: 444px;
     background: var(--theme-color-orange);
     clip-path: polygon(
-            0% 18%, 7% 5%, 16% 17%, 24% 6%, 29% 15%, 38% 7%, 44% 17%, 52% 4%, 62% 11%, 72% 0%, 77% 14%, 88% 0%,  86% 14%,
+            0% 18%, 7% 5%, 16% 17%, 24% 6%, 29% 15%, 38% 7%, 44% 14%, 52% 4%, 62% 11%, 72% 0%, 77% 14%, 88% 0%,  86% 14%,
             92% 24%, 96% 30%, 90% 38%, 111% 63%, 100% 50%, 92% 63%, 99% 71%, 95% 80%, 100% 90%, 92% 91%, 100% 110%,
             81% 100%, 70% 97%, 45% 95%, 15% 95%, 3% 90%, 0% 50%
     );
@@ -116,8 +117,8 @@ header > div:last-child > a {
 
 /* Hello Text */
 #heroSection > h1 {
-    font-family: 'Compacta', sans-serif;
-    font-size: 100px;
+    font-family: 'Anton', sans-serif;
+    font-size: 85px;
     font-weight: bold;
     color: #ffffff;
 
@@ -157,7 +158,7 @@ header > div:last-child > a {
     text-shadow: 10px 7px 10px #000000;
 
     position: relative;
-    bottom: 640px;
+    bottom: 630px;
     left: 520px;
 }
 
@@ -207,8 +208,13 @@ header > div:last-child > a {
     gap: 40px;
 }
 
-.listContainer:hover {
+.scrollingText:hover .listContainer {
     animation-play-state: paused;
+}
+
+#backTap1,
+#backTap2 {
+    pointer-events: none;
 }
 
 .listContainer.big {
@@ -223,17 +229,17 @@ header > div:last-child > a {
 
 .text, .text1 {
     margin: 0 30px 0 0;
-    font-family: 'Compacta', sans-serif;
+    font-family: 'Anton', sans-serif;
 }
 
 .text {
     color: var(--theme-color-blue);
-    font-size: 70px;
+    font-size: 65px;
 }
 
 .text1 {
     color: var(--theme-color-orange);
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .listContainer.big i {

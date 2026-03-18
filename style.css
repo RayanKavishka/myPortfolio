@@ -375,6 +375,23 @@ header > div:last-child > a {
     transform: rotate(-7deg);
 }
 
+/* About Middle Section */
+.aboutMiddle {
+    width: 266px;
+    height: 417px;
+    background: url("/assets/AboutImg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    position: absolute;
+    top: -600px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
 
 
 /*======================================================================================================================================*/

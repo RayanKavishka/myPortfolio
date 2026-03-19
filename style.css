@@ -420,7 +420,7 @@ header > div:last-child > a {
 .aboutLeft {
     width: 400px;
     height: 100px;
-    background: url("assets/signature.png");
+    background: url("/assets/signature.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

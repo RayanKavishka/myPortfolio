@@ -227,8 +227,9 @@ header > div:last-child > a {
     font-weight: normal;
     letter-spacing: 5px;
     background: #000000;
+    transform: translateY(-8px);
 
-    transform: rotate(-4.8deg);
+    rotate: -5deg;
 }
 
 /* Hero Bottom Section */

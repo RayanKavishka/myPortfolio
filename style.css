@@ -90,6 +90,28 @@ header > div:last-child > a {
     font-family: "Changa One", sans-serif;
 }
 
+@media all and (max-width: 768px) {
+    header {
+        height: 60px;
+        font-size: 18px;
+        padding: 0 30px;
+    }
+
+    header > nav {
+        border-style: none;
+        display: none;
+    }
+
+    header div:last-child {
+        display: none;
+    }
+
+    #burger-icon {
+        border-style: none;
+        display: block;
+    }
+}
+
 
 /*======================================================================================================================================*/
 
@@ -334,6 +356,8 @@ header > div:last-child > a {
         transform: translateX(-100%);
     }
 }
+
+
 
 
 /*======================================================================================================================================*/

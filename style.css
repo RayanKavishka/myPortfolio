@@ -381,6 +381,11 @@ header > div:last-child > a {
         transform: translate(0, -40px);
     }
 
+    #rTxt {
+        color: #000000;
+        text-shadow: 4px 3px #ffffff;
+    }
+
     #kavishkaTxt {
         grid-column: 1/2;
         grid-row: 4/5;

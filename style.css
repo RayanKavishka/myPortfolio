@@ -9,6 +9,8 @@ body {
 
     display: flex;
     flex-direction: column;
+
+    overflow-x: hidden;
 }
 
 * {
@@ -117,7 +119,7 @@ header > div:last-child > a {
 @media all and (max-width: 1024px) {
     header {
         height: 70px;
-        font-size: 20px;
+        font-size: 22px;
         padding: 0 40px;
     }
 
@@ -370,6 +372,7 @@ header > div:last-child > a {
 /* Mobile */
 @media all and (max-width: 640px) {
     #heroSection {
+        min-height: 100dvh;
         position: relative;
     }
 
@@ -377,7 +380,7 @@ header > div:last-child > a {
         grid-template-columns: 1fr;
         gap: 20px;
         position: absolute;
-        top: 0;
+        top: 10px;
     }
 
     #helloTxt {
@@ -439,6 +442,106 @@ header > div:last-child > a {
     .text1 {
         color: var(--theme-color-orange);
         font-size: 30px;
+    }
+
+    .listContainer.big i {
+        font-size: 15px;
+        position: relative;
+        bottom: 7px;
+    }
+
+    .listContainer.small i {
+        font-size: 15px;
+        position: relative;
+        bottom: 7px;
+    }
+
+    .scrollingText.main {
+        transform: translateY(-50px) rotate(4deg);
+    }
+}
+
+/* Tablet */
+@media all and (min-width: 641px) and (max-width: 1024px) {
+    #heroSection {
+        min-height: 100dvh;
+        position: relative;
+    }
+
+    #vector {
+        width: 90vw;
+        height: 45vw;
+        top: 45vw;
+    }
+
+    #heroGrid {
+        min-height: 100dvh;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+    }
+
+    #helloTxt {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 70px;
+        place-self: center;
+        margin: 0;
+        transform: translateY(0);
+    }
+
+    #heroMyImg {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 300px;
+        place-self: center;
+    }
+
+    #rayanTxt {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 180px;
+        place-self: center;
+        transform: translate(0, -40px);
+    }
+
+    #rTxt {
+        color: #000000;
+        text-shadow: 4px 3px #ffffff;
+    }
+
+    #kavishkaTxt {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-size: 85px;
+        place-self: center;
+        transform: translate(140px, -120px);
+    }
+
+    #heroBottom {
+        transform: translateY(2vw);
+        z-index: 1;
+    }
+
+    .listContainer {
+        padding: 8px 0 8px 40px;
+        gap: 40px;
+    }
+
+    .text, .text1 {
+        margin: 0 30px 0 0;
+        font-family: 'Anton', sans-serif;
+    }
+
+    .text {
+        color: var(--theme-color-blue);
+        font-size: 45px;
+    }
+
+    .text1 {
+        color: var(--theme-color-orange);
+        font-size: 45px;
     }
 
     .listContainer.big i {

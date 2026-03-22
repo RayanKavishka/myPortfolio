@@ -161,7 +161,7 @@ header > div:last-child > a:active {
 /* Hero Section */
 #heroSection {
     width: 100%;
-    min-height: 100dvh;
+    min-height: 100vh;
 
     overflow: hidden;
     display: flex;
@@ -389,7 +389,6 @@ header > div:last-child > a:active {
 /* Mobile */
 @media all and (max-width: 640px) {
     #heroSection {
-        min-height: 100dvh;
         position: relative;
     }
 
@@ -484,7 +483,6 @@ header > div:last-child > a:active {
 /* Tablet */
 @media all and (min-width: 641px) and (max-width: 1024px) {
     #heroSection {
-        min-height: 100dvh;
         position: relative;
     }
 

@@ -851,7 +851,7 @@ header > div:last-child > a:active {
 
     .aboutBottom > h1 {
         margin: 0;
-        font-family: 'Thunder Black', sans-serif;
+        font-weight: lighter;
         font-size: 120px;
         color: #ffffff;
     }

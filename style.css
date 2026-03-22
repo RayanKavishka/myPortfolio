@@ -91,11 +91,34 @@ header > div:last-child > a {
     display: none;
 }
 
+/* Mobile */
 @media all and (max-width: 640px) {
     header {
         height: 60px;
         font-size: 18px;
         padding: 0 30px;
+    }
+
+    header > nav {
+        border-style: none;
+        display: none;
+    }
+
+    header div:last-child {
+        display: none;
+    }
+
+    #burger-icon {
+        display: block;
+    }
+}
+
+/* Tablet */
+@media all and (max-width: 1024px) {
+    header {
+        height: 70px;
+        font-size: 20px;
+        padding: 0 40px;
     }
 
     header > nav {

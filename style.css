@@ -420,6 +420,7 @@ header > div:last-child > a:active {
         grid-column: 1/2;
         grid-row: 3/4;
         font-size: 80px;
+        letter-spacing: 5px;
         place-self: center;
         transform: translate(0, -40px);
     }
@@ -434,6 +435,7 @@ header > div:last-child > a:active {
         grid-row: 4/5;
         font-size: 38px;
         padding: 5px 10px;
+        letter-spacing: 4px;
         place-self: center;
         transform: translate(50px, -70px);
     }

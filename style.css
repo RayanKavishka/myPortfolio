@@ -163,7 +163,7 @@ header > div:last-child > a:active {
 #heroSection {
     width: 100%;
     min-height: 100vh;
-
+    height: auto;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -231,7 +231,6 @@ header > div:last-child > a:active {
     grid-row: 1/4;
     width: 320px;
     transform: rotate(-3.5deg);
-    /*place-self: start;*/
 }
 
 /* Hero Name Text Section */
@@ -239,7 +238,6 @@ header > div:last-child > a:active {
     grid-column: 2/3;
     grid-row: 2/3;
     transform: translate(-250px, -60px);
-    /*margin: 0 250px 60px 0;*/
 
     margin: 0;
     font-family: "Luckiest Guy", cursive;
@@ -401,6 +399,10 @@ header > div:last-child > a:active {
         top: 10px;
     }
 
+    #vector {
+        top: 58vw;
+    }
+
     #helloTxt {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -480,11 +482,16 @@ header > div:last-child > a:active {
     .scrollingText.main {
         transform: translateY(-50px) rotate(4deg);
     }
+
+    #heroBottom {
+        transform: translateY(-10vw);
+    }
 }
 
 /* Tablet */
 @media all and (min-width: 641px) and (max-width: 1024px) {
     #heroSection {
+        height: auto;
         position: relative;
     }
 
@@ -523,7 +530,7 @@ header > div:last-child > a:active {
         grid-row: 3/4;
         font-size: 180px;
         place-self: center;
-        transform: translate(0, -40px);
+        transform: translate(0, -12vw);
     }
 
     #rTxt {
@@ -536,7 +543,7 @@ header > div:last-child > a:active {
         grid-row: 4/5;
         font-size: 85px;
         place-self: center;
-        transform: translate(140px, -120px);
+        transform: translate(150px, -25vw);
     }
 
     #heroBottom {
@@ -579,6 +586,10 @@ header > div:last-child > a:active {
     .scrollingText.main {
         transform: translateY(-50px) rotate(4deg);
     }
+
+    #heroBottom {
+        transform: translateY(-10vw);
+    }
 }
 
 
@@ -588,8 +599,8 @@ header > div:last-child > a:active {
 /* About Section */
 #aboutSection {
     width: 100%;
-    height: 100vh;
-    min-height: 100dvh;
+    height: auto;
+    padding: 0 0 20px 0;
     background: #000000;
     overflow: hidden;
 
@@ -599,6 +610,7 @@ header > div:last-child > a:active {
 #aboutGrid {
     width: 100%;
     max-width: 1200px;
+    height: 100vh;
     margin: 0 auto;
     position: relative;
     display: grid;
@@ -744,6 +756,10 @@ header > div:last-child > a:active {
 
 /* Mobile */
 @media all and (max-width: 640px) {
+    #aboutSection {
+        transform: translateY(10vw);
+    }
+
     #aboutGrid {
         grid-template-columns: 1fr;
     }
@@ -859,7 +875,117 @@ header > div:last-child > a:active {
 
 /* Tablet */
 @media all and (min-width: 641px) and (max-width: 1024px) {
+    #aboutGrid {
+        grid-template-columns: 1fr;
+    }
 
+    /* About Top Section */
+    .aboutTop {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        transform: translateY(0);
+    }
+
+    .banner {
+        font-size:20px;
+    }
+
+    .country {
+        width: 110px;
+        height: 30px;
+        background: var(--theme-color-orange);
+
+        transform: translateY(25px);
+    }
+
+    .bDay {
+        width: 110px;
+        height: 30px;
+        background: var(--theme-color-blue);
+
+        transform: translate(10px, 15px);
+    }
+
+    .age {
+        width: 80px;
+        height: 30px;
+        background: var(--theme-color-blue);
+
+        transform: translate(20px, 50px);
+    }
+
+    .city {
+        width: 100px;
+        height: 30px;
+        background: var(--theme-color-orange);
+
+        transform: translate(-10px, 40px);
+    }
+
+    /* About Middle Section */
+    .aboutMiddle {
+        width: 180px;
+        height: 250px;
+        background: url("assets/AboutImg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+
+        transform: translateY(0);
+    }
+
+    /* About Left Section */
+    .aboutLeft {
+        width: 200px;
+        height: 50px;
+        background: url("assets/signature.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        grid-column: 1/2;
+        grid-row: 3/4;
+        place-self: center;
+        transform: translate(0, 0);
+    }
+
+    /* About Right Section */
+    .aboutRight {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        place-self: center;
+        transform: translate(0, 0);
+    }
+
+    .aboutRight > a {
+        width: 100px;
+        height: 16px;
+        font-size: 16px;
+        border-width: 2px;
+    }
+
+    /* About Bottom Section */
+    .aboutBottom {
+        width: fit-content;
+        height: fit-content;
+
+        grid-column: 1/2;
+        grid-row: 5/6;
+        text-align: center;
+        place-self: center;
+        transform: translateY(0);
+    }
+
+    .aboutBottom > h1 {
+        margin: 0;
+        font-weight: lighter;
+        font-size: 120px;
+        color: #ffffff;
+    }
 }
 
 

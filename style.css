@@ -399,10 +399,6 @@ header > div:last-child > a:active {
         top: 10px;
     }
 
-    #vector {
-        top: 58vw;
-    }
-
     #helloTxt {
         grid-column: 1/2;
         grid-row: 1/2;
@@ -756,10 +752,6 @@ header > div:last-child > a:active {
 
 /* Mobile */
 @media all and (max-width: 640px) {
-    #aboutSection {
-        transform: translateY(10vw);
-    }
-
     #aboutGrid {
         grid-template-columns: 1fr;
     }

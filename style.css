@@ -604,11 +604,8 @@ header > div:last-child > a:active {
     width: 100%;
     height: auto;
     min-height: 100vh;
-    padding: 0 0 20px 0;
     background: #000000;
     overflow: hidden;
-
-    position: relative;
 }
 
 #aboutGrid {
@@ -993,6 +990,12 @@ header > div:last-child > a:active {
 /*======================================================================================================================================*/
 
 
+
+
+
+/*======================================================================================================================================*/
+
+
 /* Contact Section */
 #contactSection {
     width: 100%;
@@ -1251,6 +1254,9 @@ button {
         height: 60px;
         border: 2px solid #ffffff;
         font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         margin: 0;
 

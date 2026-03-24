@@ -188,7 +188,7 @@ header > div:last-child > a:active {
     top: 7vw;
     right: 0;
     left: 0;
-    bottom: 0;
+    bottom: 2vw;
     margin: auto;
 
     z-index: 2;
@@ -285,7 +285,7 @@ header > div:last-child > a:active {
 
 /* Hero Bottom Section */
 #heroBottom {
-    transform: translateY(-90px);
+    transform: translateY(-4.5vw);
 }
 
 .scrollingText {
@@ -440,6 +440,7 @@ header > div:last-child > a:active {
     }
 
     #heroBottom {
+        transform: translateY(80vw);
         z-index: 1;
     }
 
@@ -479,8 +480,14 @@ header > div:last-child > a:active {
         transform: translateY(-50px) rotate(4deg);
     }
 
-    #heroBottom {
-        transform: translateY(-10vw);
+    .scrollingText.main {
+        rotate: 4deg;
+
+    }
+
+    .scrollingText.second {
+        rotate: -5deg;
+
     }
 }
 

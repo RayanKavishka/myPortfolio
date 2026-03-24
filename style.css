@@ -134,7 +134,7 @@ header > div:last-child > a:active {
 }
 
 /* Tablet */
-@media all and (max-width: 1024px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
     header {
         height: 70px;
         font-size: 22px;
@@ -492,7 +492,7 @@ header > div:last-child > a:active {
 }
 
 /* Tablet */
-@media all and (min-width: 641px) and (max-width: 1024px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
     #heroSection {
         height: auto;
         position: relative;
@@ -874,7 +874,7 @@ header > div:last-child > a:active {
 }
 
 /* Tablet */
-@media all and (min-width: 641px) and (max-width: 1024px) {
+@media all and (min-width: 640px) and (max-width: 1023px) {
     #aboutGrid {
         grid-template-columns: 1fr;
     }
@@ -1222,9 +1222,10 @@ button {
         clip-path: polygon(
                 0% 5%, 4% 3%, 9% 5%, 15% 3%, 20% 5%, 28% 2%,
                 35% 5%, 43% 3%, 50% 5%, 58% 2%, 65% 4%, 72% 2%,
-                80% 4%, 88% 2%, 95% 5%, 100% 4%, 100% 94%, 95% 98%,
-                90% 95%, 82% 99%, 75% 94%, 68% 97%, 60% 92%, 52% 99%,
-                45% 95%, 38% 100%, 30% 94%, 21% 98%, 16% 93%, 7% 96%, 3% 94%, -1% 92%
+                80% 4%, 88% 2%, 95% 5%, 100% 4%, 100% 97%, 95% 99%,
+                89% 97%, 82% 99%, 71% 97%, 68% 99%, 58% 97%, 51% 99%,
+                45% 98%, 38% 99%, 31% 97%, 20% 99%, 14% 97%, 7% 99%, 0% 97%, -1% 92%
+
         );
     }
 
@@ -1378,26 +1379,68 @@ button {
 /*======================================================================================================================================*/
 
 
-/* !* Footer *!*/
-/*footer {*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    text-align: center;*/
-/*    color: #ffffff;*/
+ /* Footer */
+footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    color: #ffffff;
 
-/*    z-index: 5;*/
-/*}*/
+    z-index: 5;
+}
 
-/*.footer.nameTxt {*/
-/*    line-height: 0.3;*/
-/*    display: block;*/
-/*    font-size: 490px;*/
-/*    font-family: "Luckiest Guy", cursive;*/
-/*}*/
+#footerContainer {
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
 
-/*.footer.copyrightTxt {*/
-/*    font-size: 15px;*/
-/*    font-family: "Poppins", sans-serif;*/
-/*    margin: 155px 0 0 0;*/
-/*}*/
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer.nameTxt {
+    place-self: center;
+    display: block;
+
+    font-size: clamp(120px, 110vw, 520px);
+    font-family: "Luckiest Guy", cursive;
+
+    line-height: 0.8;
+    white-space: nowrap;
+}
+
+
+.footer.copyrightTxt {
+    place-self: center;
+
+    margin: 0;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+
+    transform: translateY(-1vw);
+}
+
+/* Mobile */
+@media all and (max-width: 640px) {
+    .footer.nameTxt {
+        font-size: 150px;
+    }
+
+    .footer.copyrightTxt {
+        font-size: 10px;
+        transform: translateY(-2vw);
+    }
+}
+
+/* Tablet */
+@media all and (min-width: 640px) and (max-width: 1023px){
+    .footer.nameTxt {
+        font-size: 150px;
+    }
+
+    .footer.copyrightTxt {
+        font-size: 10px;
+        transform: translateY(-2vw);
+    }
+}

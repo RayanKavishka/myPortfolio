@@ -5,8 +5,12 @@
     --theme-color-blue: #1C47D2;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: #111111;
+    background-color: #000000;
 
     display: flex;
     flex-direction: column;
@@ -1165,6 +1169,161 @@ header > div:last-child > a:active {
         opacity: 1;
         filter: grayscale(0%);
         transform: translateX(0);
+    }
+}
+
+#experienceSection {
+    animation: moveTopExSection linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes moveTopExSection {
+    from {
+        scale: 0.5;
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    to {
+        scale: 1;
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+/* Mobile */
+@media all and (max-width: 640px) {
+    /* Experience Section */
+    #experienceSection {
+        width: 100%;
+        height: auto;
+        min-height: 100vh;
+        background: #000000;
+        /*overflow: hidden;*/
+        color: #ffffff;
+        padding: 60px 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Experience Top Section */
+    #exTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #exHead {
+        max-height: 450px;
+        margin: 0;
+        font-family: 'Thunder Black', sans-serif;
+        font-size: clamp(130px, 27.78vw, 400px);
+        color: var(--theme-color-blue);
+        font-weight: lighter;
+    }
+
+    /* Experience Bottom Section */
+    #exGrid {
+        width: 100%;
+        min-height: auto;
+        margin: 0 auto;
+        padding: 0 60px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 10rem;
+    }
+
+    /* Student */
+    #studentTopic {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        text-align: center;
+
+        font-family: 'Anton', sans-serif;
+        font-weight: bold;
+        font-size: 70px;
+    }
+
+    #studentDetail {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        place-self: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #stuImage {
+        width: 390px;
+        height: 385px;
+
+        background: url("assets/Student.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #stuBox, #inBox {
+        width: 390px;
+        height: auto;
+        border: 3px solid #ffffff;
+        padding: 0 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    #stuTopic, #inTopic {
+        font-family: "Changa One", sans-serif;
+        font-size: 30px;
+    }
+
+    #stuLine, #inLine {
+        height: 80px;
+        width: 10px;
+        background: #ffffff;
+    }
+
+    #stuPara, #inPara {
+        font-family: "Poppins", sans-serif;
+        font-size: 12px;
+    }
+
+    /* Intern */
+    #internDetail {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    #inImage {
+        width: 390px;
+        height: 385px;
+
+        background: url("assets/Intern.PNG");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #internTopic {
+        grid-column: 2/3;
+        grid-row: 2/3;
+        text-align: center;
+
+        font-family: 'Anton', sans-serif;
+        font-weight: bold;
+        font-size: 70px;
     }
 }
 

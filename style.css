@@ -1056,6 +1056,8 @@ header > div:last-child > a:active {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    transform: rotate(5deg);
 }
 
 #stuImage {
@@ -1105,6 +1107,8 @@ header > div:last-child > a:active {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+
+    transform: rotate(-5deg);
 }
 
 #inImage {
@@ -1175,7 +1179,7 @@ header > div:last-child > a:active {
 #experienceSection {
     animation: moveTopExSection linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 20%;
+    animation-range: entry 0% cover 30%;
 }
 
 @keyframes moveTopExSection {

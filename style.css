@@ -1056,8 +1056,6 @@ header > div:last-child > a:active {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    transform: rotate(5deg);
 }
 
 #stuImage {
@@ -1107,8 +1105,6 @@ header > div:last-child > a:active {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-
-    transform: rotate(-5deg);
 }
 
 #inImage {
@@ -1136,13 +1132,13 @@ header > div:last-child > a:active {
 }
 
 #studentDetail {
-    animation: moveTopFromRight linear;
+    animation: moveTopFromRight linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
 
 #internDetail {
-    animation: moveTopFromLeft linear;
+    animation: moveTopFromLeft linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }
@@ -1152,13 +1148,13 @@ header > div:last-child > a:active {
         scale: 0.5;
         opacity: 0;
         filter: grayscale(100%);
-        transform: translateX(-100%);
+        transform: translateX(-100%) rotate(0deg);
     }
      to {
          scale: 1;
          opacity: 1;
          filter: grayscale(0%);
-         transform: translateX(0);
+         transform: translateX(0) rotate(-5deg);
      }
 }
 @keyframes moveTopFromRight {
@@ -1166,18 +1162,18 @@ header > div:last-child > a:active {
         scale: 0.5;
         opacity: 0;
         filter: grayscale(100%);
-        transform: translateX(100%);
+        transform: translateX(100%) rotate(0deg);
     }
     to {
         scale: 1;
         opacity: 1;
         filter: grayscale(0%);
-        transform: translateX(0);
+        transform: translateX(0) rotate(5deg);
     }
 }
 
 #exTop {
-    animation: moveTopExSection linear;
+    animation: moveTopExSection linear both;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
 }

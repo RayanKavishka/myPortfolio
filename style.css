@@ -236,6 +236,7 @@ header > div:last-child > a:active {
 /* Background Vector */
 #vector {
     place-self: center;
+    padding: 10px 100px 0 0;
 
     width: clamp(380px, 75vw, 1000px);
     height: clamp(240px, 40vw, 444px);
@@ -250,7 +251,7 @@ header > div:last-child > a:active {
     margin: 0;
 
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
 
     position: relative;
@@ -258,10 +259,11 @@ header > div:last-child > a:active {
 }
 
 #heroRight {
-    place-self: center;
-
     display: flex;
     flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
 }
 
 /* Hero Name Text Section */
@@ -280,6 +282,9 @@ header > div:last-child > a:active {
     display: inline-flex;
     width: fit-content;
     height: fit-content;
+
+
+    z-index: 20;
 }
 
 .rayanText {
@@ -317,8 +322,6 @@ header > div:last-child > a:active {
 /* Hero Bottom Section */
 #heroBottom {
     transform: translateY(-45px);
-    /*position: absolute;*/
-    /*bottom: 0;*/
 }
 .scrollingText {
     text-align: center;

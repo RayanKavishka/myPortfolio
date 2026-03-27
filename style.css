@@ -238,7 +238,7 @@ header > div:last-child > a:active {
     place-self: center;
     padding: 10px 100px 0 0;
 
-    width: clamp(380px, 75vw, 1000px);
+    width: clamp(350px, 75vw, 1000px);
     height: clamp(240px, 40vw, 444px);
     background: var(--theme-color-orange);
     clip-path: polygon(

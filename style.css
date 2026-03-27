@@ -230,7 +230,7 @@ header > div:last-child > a:active {
 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 /* Background Vector */
@@ -446,16 +446,29 @@ header > div:last-child > a:active {
         align-self: end;
     }
 
-    #vector {
+    #middleWrapper {
         grid-column: 1/2;
         grid-row: 3/4;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #vector {
         place-self: center;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 
     #heroRight {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        place-self: center;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-content: center;
     }
 
     #rayanTxt {
@@ -540,18 +553,31 @@ header > div:last-child > a:active {
         align-self: end;
     }
 
-    #vector {
-        width: 90vw;
-        height: 45vw;
+    #middleWrapper {
         grid-column: 1/2;
         grid-row: 3/4;
+
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #vector {
+        width: 95vw;
+        height: 55vw;
         place-self: center;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 
     #heroRight {
-        grid-column: 1/2;
-        grid-row: 3/4;
-        place-self: center;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-content: center;
     }
 
     #rayanTxt {

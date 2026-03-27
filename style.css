@@ -1310,6 +1310,47 @@ header > div:last-child > a:active {
 /*======================================================================================================================================*/
 
 
+/* Projects Section */
+#projectsSection {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    color: #ffffff;
+    padding: 60px 0;
+
+    perspective: 1200px;
+    view-timeline-name: --cards;
+    view-timeline-axis: block;
+}
+
+/* Projects Head */
+#headProjects {
+    width: 100%;
+    min-height: fit-content;
+    padding: 60px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#headProjects > h1 {
+    margin: 0;
+    font-family: 'Thunder Black', sans-serif;
+    font-size: 400px;
+    font-weight: lighter;
+    color: var(--theme-color-blue);
+    transform: translateX(2vw);
+}
+
+#headProjects > h2 {
+    margin: 0;
+    font-family: 'Thunder Black', sans-serif;
+    font-size: 200px;
+    font-weight: lighter;
+}
+
+
 
 
 

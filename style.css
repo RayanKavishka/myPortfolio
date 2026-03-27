@@ -139,7 +139,7 @@ header > div:last-child > a:active {
 }
 
 /* Tablet */
-@media all and (min-width: 640px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 1024px) {
     header {
         height: 70px;
         font-size: 22px;
@@ -443,6 +443,7 @@ header > div:last-child > a:active {
     #rayanTxt {
         font-size: 80px;
         letter-spacing: 5px;
+        place-self: center;
     }
 
     #rTxt {
@@ -454,6 +455,7 @@ header > div:last-child > a:active {
         font-size: 38px;
         padding: 5px 10px;
         letter-spacing: 4px;
+        place-self: center;
     }
 
     #heroBottom {
@@ -901,7 +903,7 @@ header > div:last-child > a:active {
 }
 
 /* Tablet */
-@media all and (min-width: 640px) and (max-width: 1023px) {
+@media all and (min-width: 640px) and (max-width: 1024px) {
     #aboutGrid {
         grid-template-columns: 1fr;
         gap: 1rem;

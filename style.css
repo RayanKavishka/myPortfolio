@@ -1350,6 +1350,62 @@ header > div:last-child > a:active {
     font-weight: lighter;
 }
 
+/* Cards */
+.proCard {
+    position: sticky;
+    top: 60px;
+
+    margin: 0 auto 100px auto;
+    overflow: hidden;
+    background: #000000;
+    width: min(1000px, 80%);
+    height: 500px;
+    padding: 30px 30px;
+    border: 3px solid #ffffff;
+    border-radius: 2em;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    column-gap: 1rem;
+
+    transform-style: preserve-3d;
+    animation: projectsCards 1s linear both;
+    animation-timeline: --cards;
+    animation-range: entry 0% exit 50%;
+}
+
+#proCard1 {
+    top: 100px;
+}
+#proCard2 {
+    top: 140px;
+}
+#proCard3 {
+    top: 180px;
+}
+#proCard4 {
+    top: 220px;
+}
+
+@keyframes projectsCards {
+    0% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
+
+    35% {
+        transform: translateY(100px) translateZ(-200px) rotateX(8deg) scale(.92);
+    }
+
+    70% {
+        transform: translateY(20px) translateZ(-120px) rotateX(2deg) scale(.95);
+    }
+
+    100% {
+        transform: translateY(0) translateZ(0) rotateX(0) scale(1);
+    }
+}
+
 
 
 

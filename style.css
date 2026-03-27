@@ -607,19 +607,19 @@ header > div:last-child > a:active {
 #aboutSection {
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: 50vh;
     background: #000000;
-    overflow: hidden;
 }
 
 #aboutGrid {
     width: 100%;
-    max-width: 1200px;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
-    position: relative;
+    padding: 60px 60px;
+
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto auto;
 }
 
 /* About Top Section */
@@ -629,10 +629,12 @@ header > div:last-child > a:active {
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    transform: translateY(150px);
 }
 
 .banner {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
     margin: 0;
     font-family: "Luckiest Guy", cursive;
     font-size: 40px;
@@ -646,39 +648,75 @@ header > div:last-child > a:active {
 }
 
 .country {
-    width: 240px;
-    height: 60px;
     background: var(--theme-color-orange);
 
-    rotate: -7deg;
-    transform: translate(-70px, -120px);
+    animation: countryBanner linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 60%;
+}
+
+@keyframes countryBanner {
+    from {
+        transform: translate(200px, 200px) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-70px, -20px) scale(1) rotate(-7deg);
+    }
 }
 
 .bDay {
-    width: 240px;
-    height: 60px;
     background: var(--theme-color-blue);
 
-    rotate: 5deg;
-    transform: translate(80px, -120px);
+    animation: dayBanner linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 60%;
+}
+
+@keyframes dayBanner {
+    from {
+        transform: translate(-200px, 200px) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate(80px, -20px) scale(1) rotate(5deg);
+    }
 }
 
 .age {
-    width: 180px;
-    height: 60px;
     background: var(--theme-color-blue);
 
-    rotate: 7deg;
-    transform: translate(-50px, -50px);
+    animation: ageBanner linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 60%;
+}
+
+@keyframes ageBanner {
+    from {
+        transform: translate(200px, 100px) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate(-50px, 50px) scale(1) rotate(7deg);
+    }
 }
 
 .city {
-    width: 220px;
-    height: 60px;
     background: var(--theme-color-orange);
 
-    rotate: -7deg;
-    transform: translate(40px, -50px);
+    animation: cityBanner linear both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 60%;
+}
+
+@keyframes cityBanner {
+    from {
+        transform: translate(-200px, 100px) scale(0.5) rotate(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: translate(40px, 50px) scale(1) rotate(-7deg);
+    }
 }
 
 /* About Middle Section */
@@ -693,8 +731,6 @@ header > div:last-child > a:active {
     grid-column: 2/3;
     grid-row: 2/3;
     place-self: center;
-
-    transform: translateY(-120px);
 }
 
 /* About Left Section */
@@ -707,9 +743,10 @@ header > div:last-child > a:active {
     background-position: center;
 
     grid-column: 1/2;
-    grid-row: 3/4;
-    place-self: center;
-    transform: translate(-20px, -230px);
+    grid-row: 2/3;
+
+    justify-self: end;
+    align-self: center;
 }
 
 /* About Right Section */
@@ -719,9 +756,10 @@ header > div:last-child > a:active {
     gap: 50px;
 
     grid-column: 3/4;
-    grid-row: 3/4;
-    place-self: center;
-    transform: translate(-10px, -230px);
+    grid-row: 2/3;
+
+    justify-self: start;
+    align-self: center;
 }
 
 .aboutRight > a {
@@ -747,15 +785,36 @@ header > div:last-child > a:active {
     height: fit-content;
 
     grid-column: 1/4;
-    grid-row: 4/5;
-    place-self: center;
-    transform: translateY(-280px);
+    grid-row: 3/4;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
 }
 
 .aboutBottom > h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0;
-    font-family: 'Thunder Black', sans-serif;
-    font-size: 400px;
+    padding: 1rem 0;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 250px;
+    letter-spacing: 1rem;
+    color: #ffffff;
+
+    line-height: 1;
+    border-bottom: 3px solid #ffffff;
+    border-top: 3px solid #ffffff;
+}
+
+.aboutBottom > p {
+    margin: 0;
+    height: auto;
+    font-family: "Caveat Brush", cursive;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -763,80 +822,38 @@ header > div:last-child > a:active {
 @media all and (max-width: 640px) {
     #aboutGrid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 20px 20px;
     }
 
     /* About Top Section */
     .aboutTop {
         grid-column: 1/2;
         grid-row: 1/2;
-        transform: translateY(0);
+        place-self: center;
     }
 
     .banner {
-        font-size:20px;
-    }
-
-    .country {
-        width: 110px;
-        height: 30px;
-        background: var(--theme-color-orange);
-
-        transform: translateY(25px);
-    }
-
-    .bDay {
-        width: 110px;
-        height: 30px;
-        background: var(--theme-color-blue);
-
-        transform: translate(10px, 15px);
-    }
-
-    .age {
-        width: 80px;
-        height: 30px;
-        background: var(--theme-color-blue);
-
-        transform: translate(20px, 50px);
-    }
-
-    .city {
-        width: 100px;
-        height: 30px;
-        background: var(--theme-color-orange);
-
-        transform: translate(-10px, 40px);
+        font-size: 15px;
+        padding: 5px 5px;
     }
 
     /* About Middle Section */
     .aboutMiddle {
         width: 180px;
         height: 250px;
-        background: url("assets/AboutImg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
         grid-column: 1/2;
         grid-row: 2/3;
         place-self: center;
-
-        transform: translateY(0);
     }
 
     /* About Left Section */
     .aboutLeft {
         width: 200px;
         height: 50px;
-        background: url("assets/signature.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
         grid-column: 1/2;
         grid-row: 3/4;
         place-self: center;
-        transform: translate(0, 0);
     }
 
     /* About Right Section */
@@ -844,7 +861,6 @@ header > div:last-child > a:active {
         grid-column: 1/2;
         grid-row: 4/5;
         place-self: center;
-        transform: translate(0, 0);
     }
 
     .aboutRight > a {
@@ -858,19 +874,39 @@ header > div:last-child > a:active {
     .aboutBottom {
         width: fit-content;
         height: fit-content;
-
         grid-column: 1/2;
         grid-row: 5/6;
         text-align: center;
         place-self: center;
-        transform: translateY(0);
     }
 
     .aboutBottom > h1 {
-        margin: 0;
-        font-weight: lighter;
-        font-size: 120px;
-        color: #ffffff;
+        font-size: 100px;
+        letter-spacing: 0.5rem;
+    }
+
+    .aboutBottom > p {
+        font-size: 10px;
+    }
+
+    @keyframes countryBanner {
+        from {
+            transform: translate(200px, 200px) scale(0.5) rotate(0deg);
+            opacity: 0;
+        }
+        to {
+            transform: translate(-40px, 0) scale(1) rotate(-7deg);
+        }
+    }
+
+    @keyframes dayBanner {
+        from {
+            transform: translate(-200px, 200px) scale(0.5) rotate(0deg);
+            opacity: 0;
+        }
+        to {
+            transform: translate(40px, 0) scale(1) rotate(5deg);
+        }
     }
 }
 
@@ -878,81 +914,38 @@ header > div:last-child > a:active {
 @media all and (min-width: 640px) and (max-width: 1023px) {
     #aboutGrid {
         grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 20px 20px;
     }
 
     /* About Top Section */
     .aboutTop {
         grid-column: 1/2;
         grid-row: 1/2;
-        transform: translateY(0);
+        place-self: center;
     }
 
     .banner {
-        font-size:20px;
-    }
-
-    .country {
-        width: 110px;
-        height: 30px;
-        background: var(--theme-color-orange);
-
-        transform: translateY(25px);
-    }
-
-    .bDay {
-        width: 110px;
-        height: 30px;
-        background: var(--theme-color-blue);
-
-        transform: translate(10px, 15px);
-    }
-
-    .age {
-        width: 80px;
-        height: 30px;
-        background: var(--theme-color-blue);
-
-        transform: translate(20px, 50px);
-    }
-
-    .city {
-        width: 100px;
-        height: 30px;
-        background: var(--theme-color-orange);
-
-        transform: translate(-10px, 40px);
+        font-size: 20px;
+        padding: 5px 5px;
     }
 
     /* About Middle Section */
     .aboutMiddle {
         width: 180px;
         height: 250px;
-        background: url("assets/AboutImg.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
         grid-column: 1/2;
         grid-row: 2/3;
         place-self: center;
-
-        transform: translateY(0);
     }
-
 
     /* About Left Section */
     .aboutLeft {
         width: 200px;
         height: 50px;
-        background: url("assets/signature.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-
         grid-column: 1/2;
         grid-row: 3/4;
         place-self: center;
-        transform: translate(0, 0);
     }
 
     /* About Right Section */
@@ -960,7 +953,6 @@ header > div:last-child > a:active {
         grid-column: 1/2;
         grid-row: 4/5;
         place-self: center;
-        transform: translate(0, 0);
     }
 
     .aboutRight > a {
@@ -974,19 +966,39 @@ header > div:last-child > a:active {
     .aboutBottom {
         width: fit-content;
         height: fit-content;
-
         grid-column: 1/2;
         grid-row: 5/6;
         text-align: center;
         place-self: center;
-        transform: translateY(0);
     }
 
     .aboutBottom > h1 {
-        margin: 0;
-        font-weight: lighter;
         font-size: 120px;
-        color: #ffffff;
+        letter-spacing: 0.8rem;
+    }
+
+    .aboutBottom > p {
+        font-size: 18px;
+    }
+
+    @keyframes countryBanner {
+        from {
+            transform: translate(200px, 200px) scale(0.5) rotate(0deg);
+            opacity: 0;
+        }
+        to {
+            transform: translate(-40px, 0) scale(1) rotate(-7deg);
+        }
+    }
+
+    @keyframes dayBanner {
+        from {
+            transform: translate(-200px, 200px) scale(0.5) rotate(0deg);
+            opacity: 0;
+        }
+        to {
+            transform: translate(40px, 0) scale(1) rotate(5deg);
+        }
     }
 }
 
@@ -1264,6 +1276,7 @@ header > div:last-child > a:active {
 
 
 
+
 /*======================================================================================================================================*/
 
 
@@ -1277,10 +1290,11 @@ header > div:last-child > a:active {
 
     clip-path: polygon(
             0% 5%, 5% 2%, 10% 6%, 15% 3%, 20% 7%, 28% 1%,
-            35% 8%, 43% 4%, 50% 10%, 58% 2%, 65% 7%, 72% 3%,
-            80% 9%, 88% 5%, 95% 10%, 100% 4%, 100% 94%, 95% 98%,
+            35% 8%, 43% 4%, 50% 10%, 58% 2%, 65% 7%, 72% 1%,
+            83% 8%, 88% 5%, 95% 10%, 100% 4%, 100% 94%, 95% 98%,
             90% 95%, 82% 99%, 75% 94%, 68% 97%, 60% 92%, 52% 99%,
             45% 95%, 38% 100%, 30% 94%, 21% 98%, 16% 93%, 7% 96%, 3% 94%, -1% 92%
+
     );
 
     z-index: 1;
@@ -1323,6 +1337,7 @@ header > div:last-child > a:active {
     justify-content: center;
 
     margin: 0;
+    padding: 20px 20px;
 
     transform: translateY(-3vw);
 }

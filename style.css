@@ -196,7 +196,8 @@ header > div:last-child > a:active {
     );
 
     margin: 0;
-    z-index: 2;
+    position: relative;
+    z-index: 1;
 }
 
 /* Hero Grid */
@@ -238,6 +239,9 @@ header > div:last-child > a:active {
     align-self: end;
 
     transform: rotate(-3.5deg);
+
+    position: relative;
+    z-index: 2;
 }
 
 #heroRight {
@@ -247,6 +251,9 @@ header > div:last-child > a:active {
 
     display: flex;
     flex-direction: column;
+
+    position: relative;
+    z-index: 3;
 }
 
 /* Hero Name Text Section */

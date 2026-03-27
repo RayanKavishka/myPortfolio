@@ -1406,7 +1406,108 @@ header > div:last-child > a:active {
     }
 }
 
+.proHead {
+    grid-column: 1/2;
+    grid-row: 1/2;
 
+    display: flex;
+    justify-content: start;
+    align-content: start;
+    flex-direction: row;
+    gap: 2rem;
+
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+}
+
+.proNumber {
+    margin: 0;
+    font-size: 80px;
+    align-self: start;
+}
+
+.proTopic {
+    margin: 0;
+    font-size: 30px;
+    align-self: center;
+
+    max-width: 400px;
+}
+
+.proButton {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    place-self: end;
+    align-self: center;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    background: #ffffff;
+    min-width: 200px;
+    min-height: 50px;
+    border-radius: 2em;
+
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: #111111;
+}
+
+.proImage {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    place-self: center;
+
+    width: 500px;
+    height: 330px;
+    border: 2px solid #ffffff;
+    border-radius: 2em;
+}
+
+#proImage1 {
+    background: url("assets/Stock Mngmt Project.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#proImage2 {
+    background: url("assets/Connect 4 Game Project.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#proImage3 {
+    background: url("assets/myPortfolioWebsite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#proImage4 {
+    background: url("assets/Paintshop Mngmt Project.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.proDesc {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    place-self: center;
+
+    margin: 0;
+    padding: 0;
+    text-align: left;
+
+    font-family: "Carter One", system-ui;
+    font-size: 20px;
+    font-weight: lighter;
+}
 
 
 

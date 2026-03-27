@@ -1337,7 +1337,6 @@ header > div:last-child > a:active {
     justify-content: center;
 
     margin: 0;
-    padding: 20px 20px;
 
     transform: translateY(-3vw);
 }

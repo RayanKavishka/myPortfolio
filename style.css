@@ -1633,6 +1633,112 @@ header > div:last-child > a:active {
     }
 }
 
+/* Tablet */
+@media all and (min-width: 640px) and (max-width: 1024px) {
+    #projectsSection {
+        padding: 30px 0;
+    }
+
+    #headProjects {
+        padding: 30px 0;
+    }
+
+    #headProjects > h1 {
+        font-size: 280px;
+        transform: translateX(0);
+        font-weight: lighter;
+    }
+
+    #headProjects > h2 {
+        font-size: 120px;
+        font-weight: lighter;
+    }
+
+    .proCard {
+        top: 45px;
+        margin: 0 auto 50px auto;
+
+        height: 500px;
+        padding: 20px 30px;
+        border: 2px solid #ffffff;
+
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #proCard1 {
+        top: 90px;
+    }
+    #proCard2 {
+        top: 140px;
+    }
+    #proCard3 {
+        top: 190px;
+    }
+    #proCard4 {
+        top: 240px;
+    }
+    .proHead {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .proNumber {
+        font-size: 60px;
+        align-self: center;
+    }
+
+    .proTopic {
+        font-size: 27px;
+        justify-content: space-between;
+        text-align: center;
+
+        max-width: 70%;
+    }
+
+    .proImage {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+        width: 500px;
+        height: 220px;
+    }
+
+    .proDesc {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        place-self: center;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .proButton {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        place-self: center;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        background: #ffffff;
+        min-width: 500px;
+        min-height: 40px;
+        border-radius: 2em;
+
+        font-family: 'Anton', sans-serif;
+        font-size: 23px;
+    }
+
+    .proButton:hover {
+        scale: 0.9;
+        color: var(--theme-color-orange);
+    }
+}
 
 
 /*======================================================================================================================================*/

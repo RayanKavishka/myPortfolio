@@ -2241,7 +2241,7 @@ button {
 
         margin: 0;
 
-        transform: translateY(15vw);
+        transform: translateY(10vw);
     }
 
     #head {
@@ -2249,7 +2249,7 @@ button {
         font-size: 50px;
 
         text-align: center;
-        transform: translateY(10vw);
+        transform: translateY(6vw);
     }
 
     #content {

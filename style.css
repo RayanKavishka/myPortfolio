@@ -1317,7 +1317,7 @@ header > div:last-child > a:active {
     #exGrid {
         padding: 0 40px;
         grid-template-columns: 1fr;
-        row-gap: 3rem;
+        row-gap: 5rem;
     }
 
     /* Student */

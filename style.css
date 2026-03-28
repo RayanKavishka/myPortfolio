@@ -1307,6 +1307,76 @@ header > div:last-child > a:active {
     }
 }
 
+/* Tablet */
+@media all and (min-width: 640px) and (max-width: 1024px) {
+    #experienceSection {
+        padding: 40px 0;
+    }
+
+    /* Experience Bottom Section */
+    #exGrid {
+        padding: 0 40px;
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+
+    /* Student */
+    #studentTopic {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        font-size: 55px;
+    }
+
+    #studentDetail {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        gap: 10px;
+    }
+
+    #stuImage {
+        width: 300px;
+        height: 295px;
+    }
+
+    #stuBox, #inBox {
+        width: 300px;
+        border: 2px solid #ffffff;
+        padding: 0 10px;
+        gap: 1rem;
+    }
+
+    #stuTopic, #inTopic {
+        font-size: 18px;
+    }
+
+    #stuLine, #inLine {
+        height: 100px;
+        width: 10px;
+    }
+
+    #stuPara, #inPara {
+        font-size: 12px;
+    }
+
+    /* Intern */
+    #internDetail {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        gap: 10px;
+    }
+
+    #inImage {
+        width: 300px;
+        height: 295px;
+    }
+
+    #internTopic {
+        grid-column: 1/2;
+        grid-row: 3/4;
+        font-size: 55px;
+    }
+}
+
 /*======================================================================================================================================*/
 
 

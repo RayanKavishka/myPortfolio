@@ -1491,7 +1491,7 @@ header > div:last-child > a:active {
 }
 
 #proImage3 {
-    background: url("assets/myPortfolioWebsite.png");
+    background: url("assets/Portfolio Project.PNG");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2023,6 +2023,8 @@ button {
         place-self: center;
     }
 }
+
+
 
 
 /*======================================================================================================================================*/

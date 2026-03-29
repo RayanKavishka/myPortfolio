@@ -1896,6 +1896,28 @@ header > div:last-child > a:active {
         display: none;
     }
 
+    .group1 {
+        flex: 0 0 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px 1rem 10px 0;
+
+        animation: imgSpin 50s infinite linear;
+    }
+
+    .group2 {
+        flex: 0 0 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        padding: 10px 1rem 10px 0;
+
+        animation: imgSpin 60s infinite linear reverse;
+    }
+
 
 
 

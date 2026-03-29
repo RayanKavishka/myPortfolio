@@ -2038,6 +2038,32 @@ header > div:last-child > a:active {
         }
     }
 
+/* Mobile */
+@media all and (max-width: 640px) {
+    #blogSection {
+        padding: 20px 0 60px 0;
+    }
+
+    #headBlog {
+        font-size: 130px;
+    }
+
+    #blogContainer {
+        transform: translateY(0) rotate(-3deg);
+    }
+
+    .image {
+        width: 180px;
+        aspect-ratio: 16/9;
+    }
+
+    .image:active {
+        filter: grayscale(0%);
+    }
+}
+
+
+
 
     /*======================================================================================================================================*/
 
@@ -2651,7 +2677,7 @@ header > div:last-child > a:active {
     }
 
     /* Tablet */
-    @media all and (min-width: 640px) and (max-width: 1023px){
+    @media all and (min-width: 640px) and (max-width: 1024px){
         .footer.nameTxt {
             font-size: 150px;
         }

@@ -813,6 +813,15 @@ header > div:last-child > a:active {
     font-family: "Fjalla One", sans-serif;
     font-size: 25px;
     color: #ffffff;
+
+    transition-duration: 150ms;
+}
+
+.aboutRight > a:hover, .aboutRight > a:active {
+    background: #ffffff;
+    transform: scale(0.85);
+    color: var(--theme-color-orange);
+    border: 4px dotted var(--theme-color-orange);
 }
 
 /* About Bottom Section */
@@ -1840,7 +1849,7 @@ header > div:last-child > a:active {
 }
 
 #headBlog span {
-    animation: textBounce 0.8s ease infinite alternate;
+    animation: bounceEffect 0.8s ease infinite alternate;
 }
 
     #headBlog > span:nth-child(1) {
@@ -1856,7 +1865,7 @@ header > div:last-child > a:active {
         animation-delay: 0.4s;
     }
 
-    @keyframes textBounce {
+    @keyframes bounceEffect {
         from {
             transform: translateY(0);
         }
@@ -1919,14 +1928,14 @@ header > div:last-child > a:active {
         width: 350px;
         aspect-ratio: 16/9;
         border-radius: 1rem;
-        filter: grayscale(90%);
+        filter: grayscale(100%);
 
-        transition-duration: 300ms;
+        transition: all 500ms;
     }
 
     .image:hover {
         filter: grayscale(0);
-        scale: 1.02;
+        scale: 1.05;
     }
 
     .img1 {

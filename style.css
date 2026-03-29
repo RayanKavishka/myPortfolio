@@ -1868,6 +1868,22 @@ header > div:last-child > a:active {
         }
     }
 
+    #blogContainer {
+        width: 100%;
+        margin: 0 auto;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 1rem;
+        background: rgba(0, 0, 0, 0.15);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        transform: translateY(-140px) rotate(-3deg);
+    }
+
 
 
 

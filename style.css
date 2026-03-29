@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background-color: #111111;
+    background-color: #000000;
 
     display: flex;
     flex-direction: column;
@@ -1054,6 +1054,8 @@ header > div:last-child > a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    background: #111111;
 }
 
 /* Experience Top Section */
@@ -1391,6 +1393,8 @@ header > div:last-child > a:active {
     perspective: 1500px;
     view-timeline-name: --cards;
     view-timeline-axis: block;
+
+    background: #111111;
 }
 
 /* Projects Head */
@@ -1825,13 +1829,6 @@ header > div:last-child > a:active {
     align-items: center;
     background: #000000;
     padding: 100px 0 0 0;
-    clip-path: polygon(
-            0% 6%, 5% 2%, 10% 6%, 15% 3%, 20% 7%, 25% 2%, 30% 6%, 35% 3%,
-            40% 7%, 45% 2%, 50% 6%, 55% 3%, 60% 7%, 65% 2%, 70% 6%, 75% 3%,
-            80% 7%, 85% 2%, 90% 6%, 95% 3%, 100% 6%,
-            100% 100%,
-            0% 100%
-    );
 }
 
 #headBlog {

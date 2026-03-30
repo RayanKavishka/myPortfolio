@@ -1582,7 +1582,20 @@ header > div:last-child > a:active {
     color: #000000;
 }
 
+#educationHead span {
+    animation: moveTopEdu linear both;
+    animation-timeline: view(40% 0%);
+}
 
+@keyframes moveTopEdu {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(355deg);
+    }
+}
 
 
 /*======================================================================================================================================*/

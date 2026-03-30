@@ -1391,6 +1391,107 @@ header > div:last-child > a:active {
 /*======================================================================================================================================*/
 
 
+/* Education Section */
+#educationSection {
+    width: 100%;
+    height: auto;
+    padding: 60px 0 0 0;
+    background: #111111;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#educationHead {
+    width: fit-content;
+    height: fit-content;
+}
+
+#educationHead > div {
+    margin: 0;
+    font-family: "Luckiest Guy", cursive;
+    font-size: 280px;
+    color: var(--theme-color-blue);
+
+    position: relative;
+}
+
+#educationHead span {
+    width: fit-content;
+    height: fit-content;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
+    color: #000000;
+    -webkit-text-stroke: 3px #ffffff;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    transform: rotate(-9deg);
+}
+
+#eduImgContainer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    padding: 1rem;
+
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    transform: translateY(-100px);
+
+    border-radius: 1rem;
+}
+
+#highEduContainer {
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+#lowEduContainer {
+    grid-column: 2/3;
+    grid-row: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 460px;
+}
+
+.highEduCardWrapper {
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
+
+}
+
+.lowEduCardWrapper {
+    width: 100%;
+    flex-grow: 1;
+}
+
+
+
+
+/*======================================================================================================================================*/
+
+
 /* Projects Section */
 #projectsSection {
     width: 100%;

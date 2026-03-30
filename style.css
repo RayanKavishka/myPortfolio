@@ -1486,6 +1486,34 @@ header > div:last-child > a:active {
     flex-grow: 1;
 }
 
+#degreeImg {
+    background: url("assets/Cinec Campus.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hndImg {
+    background: url("assets/IJSE.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#alImg {
+    background: url("assets/St. Joseph Vaz college.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#olImg {
+    background: url("assets/Sindathriya School.PNG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 
 

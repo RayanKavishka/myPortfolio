@@ -1777,6 +1777,42 @@ header > div:last-child > a:active {
     background: #111111;
 }
 
+/* Tool Images */
+.toolImagesContainer {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.toolImagesContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    filter: grayscale(100%);
+    transition: filter ease 0.5s;
+}
+
+.toolImagesContainer img:hover {
+    filter: grayscale(0%);
+}
+
+.toolImg {
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    cursor: pointer;
+    will-change: width, height;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 1rem;
+
+    position: relative;
+}
+
 
 
 

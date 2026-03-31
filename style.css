@@ -209,7 +209,7 @@ header > div:last-child > a:active {
     color: var(--theme-color-orange);
 }
 
-    /* Hero My Image Section */
+/* Hero My Image Section */
 #heroMyImg {
     grid-column: 1/2;
     grid-row: 1/3;

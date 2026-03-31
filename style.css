@@ -1813,6 +1813,49 @@ header > div:last-child > a:active {
     position: relative;
 }
 
+/* Tool Names */
+.toolNamesContainer {
+    width: 100%;
+    height: 15rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.toolName h1 {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: "Thunder Black", sans-serif;
+    font-weight: lighter;
+    font-size: 20rem;
+    line-height: 1;
+    color: var(--theme-color-orange);
+    user-select: none;
+    transform: translateY(100%);
+}
+
+.toolName.default h1 {
+    color: #ffffff;
+    transform: translateY(-100%);
+}
+
+.toolName h1 .letter {
+    position: relative;
+    transform: translateY(0%);
+    will-change: transform;
+}
+
+#toolsSection > p {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-family: "Changa One", sans-serif;
+    font-size: large;
+    font-weight: lighter;
+}
+
 
 
 

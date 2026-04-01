@@ -1174,10 +1174,6 @@ header > div:last-child > a:active {
     grid-column: 2/3;
     grid-row: 2/3;
     text-align: center;
-
-    font-family: 'Anton', sans-serif;
-    font-weight: bold;
-    font-size: 70px;
 }
 
 #studentTopic > h1, #internTopic > h1 {
@@ -1245,6 +1241,50 @@ header > div:last-child > a:active {
     }
 }
 
+/* svg topics */
+#studentTopic svg path,
+#internTopic svg path {
+    fill: transparent;
+    stroke: #ffffff;
+    stroke-width: 3px;
+    stroke-dasharray: 800;
+    stroke-dashoffset: 800;
+
+    animation: strokeTextAnimation linear forwards;
+    animation-timeline: view(90% 10%);
+}
+
+#studentTopic svg,
+#internTopic svg {
+    width: 75%;
+    height: auto;
+
+    animation: scale linear forwards;
+    animation-timeline: view(90% 10%);
+}
+
+@keyframes strokeTextAnimation {
+    0% {
+        stroke-dashoffset: 800;
+    }
+    90% {
+        fill: transparent;
+    }
+    100% {
+        fill: #ffffff;
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* Mobile */
 @media all and (max-width: 640px) {
     #experienceSection {
@@ -1266,7 +1306,6 @@ header > div:last-child > a:active {
     #studentTopic {
         grid-column: 1/2;
         grid-row: 1/2;
-        font-size: 30px;
     }
 
     #studentDetail {
@@ -1315,7 +1354,12 @@ header > div:last-child > a:active {
     #internTopic {
         grid-column: 1/2;
         grid-row: 3/4;
-        font-size: 30px;
+    }
+
+    #studentTopic svg,
+    #internTopic svg {
+        width: 70%;
+        height: auto;
     }
 }
 
@@ -1340,7 +1384,6 @@ header > div:last-child > a:active {
     #studentTopic {
         grid-column: 1/2;
         grid-row: 1/2;
-        font-size: 55px;
     }
 
     #studentDetail {
@@ -1389,7 +1432,12 @@ header > div:last-child > a:active {
     #internTopic {
         grid-column: 1/2;
         grid-row: 3/4;
-        font-size: 55px;
+    }
+
+    #studentTopic svg,
+    #internTopic svg {
+        width: 80%;
+        height: auto;
     }
 }
 

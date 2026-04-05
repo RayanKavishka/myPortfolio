@@ -63,6 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 1,
                 filter: "grayscale(0%)",
+                border: "6px solid #E10600",
                 duration: 0.75,
                 ease: "power4.out",
             });
@@ -105,6 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 0.8,
                 filter: "grayscale(100%)",
+                border: "6px solid ##ffffff",
                 duration: 0.75,
                 ease: "power4.out",
             });
@@ -193,6 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 1,
                 filter: "grayscale(0%)",
+                border: "4px solid #E10600",
                 duration: 0.75,
                 ease: "power4.out",
             });
@@ -235,6 +238,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 0.8,
                 filter: "grayscale(100%)",
+                border: "4px solid ##ffffff",
                 duration: 0.75,
                 ease: "power4.out",
             });
@@ -323,6 +327,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 1,
                 filter: "grayscale(0%)",
+                border: "2px solid #E10600",
                 duration: 0.75,
                 ease: "power4.out",
             });
@@ -365,6 +370,7 @@ document.addEventListener("DOMContentLoaded", () => {
             gsap.to(image, {
                 scale: 0.8,
                 filter: "grayscale(100%)",
+                border: "2px solid ##ffffff",
                 duration: 0.75,
                 ease: "power4.out",
             });

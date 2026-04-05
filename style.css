@@ -1904,6 +1904,7 @@ header > div:last-child > a:active {
     height: 220px;
     padding: 2rem 1rem;
     border-radius: 1rem;
+    border: 6px solid var(--theme-color-orange);
 
     display: flex;
     justify-content: center;
@@ -2001,7 +2002,7 @@ header > div:last-child > a:active {
     }
 
     .skillHeadContainer {
-        height: 2.5rem;
+        height: 2.2rem;
         display: flex;
         justify-content: center;
         align-items: center
@@ -2042,6 +2043,7 @@ header > div:last-child > a:active {
         width: 80px;
         height: 100px;
         padding: 1rem 0.5rem;
+        border: 2px solid var(--theme-color-orange);
     }
 
     #skillArrowsBtn {
@@ -2150,6 +2152,7 @@ header > div:last-child > a:active {
         width: 120px;
         height: 140px;
         padding: 1rem 0.5rem;
+        border: 2px solid var(--theme-color-orange);
     }
 
     #skillArrowsBtn {

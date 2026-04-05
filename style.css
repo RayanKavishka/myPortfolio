@@ -143,6 +143,7 @@ header {
         position: absolute;
         top: 60px;
         left: 0;
+        right: 0;
         width: 100%;
         min-height: 80vh;
         flex-direction: column;
@@ -228,6 +229,7 @@ header {
         position: absolute;
         top: 70px;
         left: 0;
+        right: 0;
         width: 100%;
         min-height: 80vh;
         flex-direction: column;

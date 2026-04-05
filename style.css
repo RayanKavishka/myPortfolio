@@ -1805,12 +1805,192 @@ header > div:last-child > a:active {
 
 /*======================================================================================================================================*/
 
+
+/* Skills Section */
+#skillsSection {
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+    padding: 60px 60px;
+    margin: 0 auto;
+    background: #111111;
+
+    display: grid;
+    grid-template-columns: 35rem auto;
+    grid-template-rows: auto auto auto;
+}
+
+/* Header */
+.skillHeadDes {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.skillHeadContainer {
+    width: 100%;
+    height: 7.5rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.skillHead {
+    margin: 0;
+    font-family: "Luckiest Guy", cursive;
+    color: var(--theme-color-orange);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 7rem;
+    line-height: 1;
+    user-select: none;
+    position: absolute;
+
+    transform: translateY(100%);
+}
+
+.defaultHead {
+    transform: translateY(0);
+}
+
+/* Description */
+.skillDesContainer {
+    width: 100%;
+    height: 10rem;
+    padding: 1rem 1rem 1rem 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    overflow: hidden;
+}
+
+.skillDes {
+    margin: 0;
+    width: 30rem;
+    height: 10rem;
+    font-family: "Changa One", sans-serif;
+    color: #ffffff;
+    text-align: left;
+    font-weight: lighter;
+    font-size: 1.3rem;
+    line-height: 1;
+    user-select: none;
+    position: absolute;
+
+    transform: translateY(100%);
+}
+
+.defaultDes {
+    transform: translateY(0);
+}
+
+/* Images */
+.skillImagesContainer {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    place-self: center;
+
+    width: 750px;
+    height: 250px;;
+    overflow-x: auto;
+    display: flex;
+    gap: 1rem;
+}
+
+.skillImagesContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.skillImage {
+    flex: 0 0 180px;
+    background: #ffffff;
+    width: 150px;
+    height: 220px;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(0.8);
+    filter: grayscale(100%);
+}
+
+.defaultImg {
+    transform: scale(1);
+    filter: grayscale(0%);
+}
+
+/* Buttons */
+#skillArrowsBtn {
+    grid-column: 1/3;
+    grid-row: 2/3;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#skillArrowsBtn button {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80px;
+    height: 80px;
+    background: #ffffff;
+    border-radius: 100%;
+
+    cursor: pointer;
+}
+
+.fa-arrow-left-long, .fa-arrow-right-long {
+    font-size: 35px;
+    color: #000000;
+}
+
+#skillArrowsBtn button:hover .fa-arrow-left-long,
+#skillArrowsBtn button:hover .fa-arrow-right-long {
+    font-size: 35px;
+    color: var(--theme-color-orange);
+}
+
+#skillArrowsBtn button:active .fa-arrow-left-long,
+#skillArrowsBtn button:active .fa-arrow-right-long {
+    font-size: 35px;
+    color: var(--theme-color-orange);
+}
+
+.fa-arrow-left-long, .fa-arrow-right-long {
+    font-size: 25px;
+    transition: all 150ms ease-in-out;
+}
+
+/* Main Skill Head */
+#SkillHeaderText {
+    margin: 0;
+    grid-column: 1/3;
+    grid-row: 3/4;
+
+    place-self: center;
+    font-family: 'Thunder Black', sans-serif;
+    font-weight: lighter;
+    font-size: 325px;
+    color: var(--theme-color-orange);
+    -webkit-text-stroke: 6px #ffffff;
+    letter-spacing: 0.5rem;
+}
+
+
+
+
+/*======================================================================================================================================*/
+
+
 /* Tools Section */
 #toolsSection {
     width: 100%;
     height: auto;
     color: #ffffff;
-    padding: 150px 0 0 0;
+    padding: 30px 0 0 0;
 
     display: flex;
     flex-direction: column;
@@ -3330,6 +3510,4 @@ footer {
         font-size: 10px;
         transform: translateY(-2vw);
     }
-}
-
 }

@@ -2001,14 +2001,14 @@ header > div:last-child > a:active {
     }
 
     .skillHeadContainer {
-        height: 3rem;
+        height: 2.5rem;
         display: flex;
         justify-content: center;
         align-items: center
     }
 
     .skillHead {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     .skillDesContainer {
@@ -2087,7 +2087,113 @@ header > div:last-child > a:active {
     }
 }
 
+/* Tablet */
+@media all and (min-width: 640px) and (max-width: 1024px) {
+    #skillsSection {
+        padding: 60px 20px 0 20px;
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+        gap: 0.5rem;
+    }
 
+    .skillHeadDes {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        width: 100%;
+        place-self: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .skillHeadContainer {
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .skillHead {
+        font-size: 6rem;
+    }
+
+    .skillDesContainer {
+        width: 100%;
+        padding: 0;
+        height: 6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+
+    .skillDes {
+        width: 80%;
+        height: 6rem;
+        text-align: center;
+        font-size: 1rem;
+
+    }
+    .skillImagesContainer {
+        grid-column: 1/2;
+        grid-row: 2/3;
+        place-self: center;
+        width: 100%;
+        height: 140px;
+        gap: 0.5rem;
+    }
+
+    .skillImage {
+        flex: 0 0 80px;
+        background: #ffffff;
+        width: 120px;
+        height: 140px;
+        padding: 1rem 0.5rem;
+    }
+
+    #skillArrowsBtn {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+
+    #skillArrowsBtn button {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 45px;
+        height: 45px;
+    }
+
+    .fa-arrow-left-long, .fa-arrow-right-long {
+        font-size: 15px;
+    }
+
+    #skillArrowsBtn button:hover .fa-arrow-left-long,
+    #skillArrowsBtn button:hover .fa-arrow-right-long {
+        font-size: 15px;
+    }
+
+    #skillArrowsBtn button:active .fa-arrow-left-long,
+    #skillArrowsBtn button:active .fa-arrow-right-long {
+        font-size: 15px;
+        color: var(--theme-color-orange);
+    }
+
+    .fa-arrow-left-long, .fa-arrow-right-long {
+        font-size: 10px;
+    }
+
+    #SkillHeaderText {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        font-size: 250px;
+        -webkit-text-stroke: 3px #ffffff;
+        letter-spacing: 0.3rem;
+    }
+}
 
 
 /*======================================================================================================================================*/

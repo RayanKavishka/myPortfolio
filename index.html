@@ -31,7 +31,7 @@
     <div id="logo">Portfolio.</div>
 
     <!-- Navigation -->
-    <nav>
+    <nav id="defaultNav" class="navigationBar">
         <ul>
             <li><a href="#header">Home</a></li>
             <li><a href="#aboutSection">About</a></li>
@@ -39,15 +39,20 @@
             <li><a href="#skillsSection">Skills</a></li>
             <li><a href="#projectsSection">Projects</a></li>
             <li><a href="#blogSection">Blog</a></li>
+
+            <li id="mobileContactBtn"><a href="#contactSection">Contact</a></li>
         </ul>
     </nav>
 
-    <i id="burger-icon" class="fa-solid fa-bars"></i>
-
-    <!-- Contact btn -->
-    <div>
+    <!-- Contact Button -->
+    <div id="contactBtn">
         <a href="#contactSection">Contact</a>
     </div>
+
+    <!-- Burger Menu (mobile only) -->
+    <a href="javascript:void(0);" class="burgerIcon" onclick="burgerIconClick()">
+        <i id="burger-icon" class="fa-solid fa-bars"></i>
+    </a>
 </header>
 
 <!-- Main -->

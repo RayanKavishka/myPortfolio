@@ -1,9 +1,24 @@
 /* global gsap, SplitText */
 gsap.registerPlugin(SplitText);
 
+// Header
+function burgerIconClick() {
+    const nav = document.getElementById("defaultNav");
+    const icon = document.getElementById("burger-icon");
+
+    nav.classList.toggle("responsiveNav");
+
+    if (nav.classList.contains("responsiveNav")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+}
 
 // Skills Section
-
 document.addEventListener("DOMContentLoaded", () => {
     const skillHead = document.querySelectorAll(".skillHead");
     const skillDes = document.querySelectorAll(".skillDes");
@@ -419,7 +434,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Tool Section
-
 document.addEventListener("DOMContentLoaded", () => {
     const toolImageContainer = document.querySelector(".toolImagesContainer");
     const toolImages = document.querySelectorAll(".toolImagesContainer .toolImg");

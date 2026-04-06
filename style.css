@@ -38,7 +38,8 @@ body {
 .bar {
     width: 10%;
     height: 105vh;
-    background: var(--theme-color-orange);
+    background: #000000;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.9);
 }
 
 .counter {
@@ -51,7 +52,7 @@ body {
     align-items: flex-end;
     z-index: 100000;
 
-    color: #111111;
+    color: var(--theme-color-orange);
     padding: 0.2em 0.4em;
     font-size: 20vw;
     font-family: "Thunder Black", sans-serif;

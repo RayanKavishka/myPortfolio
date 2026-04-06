@@ -686,6 +686,5 @@ function sendEmail(e) {
         })
         .catch(function (error) {
             alert("Failed to send");
-            console.log(error);
         });
 }

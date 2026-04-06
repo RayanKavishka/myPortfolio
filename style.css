@@ -2952,6 +2952,73 @@ header {
 /*======================================================================================================================================*/
 
 
+/* Assignment Nav Section */
+#assignmentsNav {
+    width: 100%;
+    height: auto;
+    padding: 0 0 60px 0;
+    margin: 0;
+    background: #111111;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#assignmentBtnContainer {
+    width: 400px;
+    height: 50px;
+
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid #ffffff;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.65);
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all .2s ease;
+}
+
+#assignmentBtnContainer > a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: "Fjalla One", sans-serif;
+    letter-spacing: 1px;
+}
+
+#assignmentBtnContainer:hover {
+    transform: scale(0.9);
+}
+
+#assignmentBtnContainer:hover > a {
+    color: var(--theme-color-orange);
+}
+
+/* Mobile */
+@media all and (max-width: 640px) {
+    #assignmentBtnContainer {
+        width: 250px;
+        height: 40px;
+    }
+
+    #assignmentBtnContainer > a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-family: "Fjalla One", sans-serif;
+        letter-spacing: 1px;
+    }
+}
+
+
+/*======================================================================================================================================*/
+
+
 /* Blog Section */
 #blogSection {
     width: 100%;

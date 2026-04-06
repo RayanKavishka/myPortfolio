@@ -657,3 +657,35 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+
+// Skills Section
+// ===== Send Email By Submit Button =====
+(function () {
+    emailjs.init({
+        publicKey: "iqOiXIV2IzodYBZVa",
+    });
+})();
+
+document.getElementById("contactForm").addEventListener("submit", sendEmail);
+
+function sendEmail(e) {
+    e.preventDefault();
+
+    let params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        subject: document.getElementById("subject").value,
+        message: document.getElementById("message").value,
+    };
+
+    emailjs.send("service_rgfzhmq", "template_uq06trp", params)
+        .then(function () {
+            alert("Email has been sent");
+            document.getElementById("contactForm").reset();
+        })
+        .catch(function (error) {
+            alert("Failed to send");
+            console.log(error);
+        });
+}

@@ -3743,11 +3743,11 @@ header {
     place-self: end;
 }
 
-#subjectField, #msgField {
+#subject, #message {
     padding: 0 0 0 30px;
 }
 
-#msgField {
+#message {
     padding: 25px 25px 0 30px;
     height: 180px;
     resize: none;
@@ -3916,11 +3916,11 @@ button:hover, button:active {
         place-self: center;
     }
 
-    #subjectField, #msgField {
+    #subject, #message {
         padding: 0 0 0 25px;
     }
 
-    #msgField {
+    #message {
         padding: 25px 25px 0 25px;
         height: 200px;
     }
@@ -4074,11 +4074,11 @@ button:hover, button:active {
         place-self: center;
     }
 
-    #subjectField, #msgField {
+    #subject, #message {
         padding: 0 0 0 25px;
     }
 
-    #msgField {
+    #message {
         padding: 25px 25px 0 25px;
         height: 200px;
     }

@@ -737,15 +737,15 @@
 
             <!-- Bottom Right Section -->
             <div id="bottomRight">
-                <form id="contactForm" action="#" method="post">
+                <form id="contactForm" method="post">
 
-                    <input id="nameField" class="input" type="text" name="userName" placeholder="Your Name">
+                    <input id="name" class="input" type="text" name="userName" placeholder="Your Name">
 
-                    <input id="emailField" class="input" type="email" name="userEmail" placeholder="Your Email">
+                    <input id="email" class="input" type="email" name="userEmail" placeholder="Your Email">
 
-                    <input id="subjectField" class="input" type="text" name="userSubject" placeholder="Subject">
+                    <input id="subject" class="input" type="text" name="userSubject" placeholder="Subject">
 
-                    <textarea id="msgField" class="input" name="userMsg" placeholder="Type Your Message"></textarea>
+                    <textarea id="message" class="input" name="userMsg" placeholder="Type Your Message"></textarea>
 
                     <div class="buttons">
                         <button type="reset">RESET</button>
@@ -777,6 +777,11 @@
 <!-- GSAP and SplitText from CDN -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+
+<!-- Plug EmailJS Service -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 
 <!-- My JS file -->
 <script src="script.js"></script>

@@ -679,12 +679,23 @@ function sendEmail(e) {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_rgfzhmq", "template_uq06trp", params)
-        .then(function () {
-            alert("Email has been sent");
-            document.getElementById("contactForm").reset();
-        })
-        .catch(function (error) {
-            alert("Failed to send");
-        });
+    let isFilled = true;
+    Object.values(params).forEach((val) => {
+        if (val.trim() === "") {
+            isFilled = false;
+        }
+    });
+
+    if (isFilled) {
+        emailjs.send("service_rgfzhmq", "template_uq06trp", params)
+            .then(function () {
+                alert("Email has been sent");
+                document.getElementById("contactForm").reset();
+            })
+            .catch(function (error) {
+                alert("Failed to send");
+            });
+    } else {
+        alert("Fill all fields");
+    }
 }

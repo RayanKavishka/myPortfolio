@@ -25,6 +25,42 @@ body {
 /*======================================================================================================================================*/
 
 
+/* Pre-Loader Animation */
+.overlay {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+    z-index: 99999;
+}
+
+.bar {
+    width: 10%;
+    height: 105vh;
+    background: var(--theme-color-orange);
+}
+
+.counter {
+    margin: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    z-index: 100000;
+
+    color: #111111;
+    padding: 0.2em 0.4em;
+    font-size: 20vw;
+    font-family: "Thunder Black", sans-serif;
+}
+
+
+/*======================================================================================================================================*/
+
+
 /* Header */
 header {
     width: 100%;

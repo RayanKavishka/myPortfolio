@@ -3162,7 +3162,7 @@ header {
 /* Mobile */
 @media all and (max-width: 640px) {
     #assignmentsSection {
-        padding: 0 30px 80px 30px;
+        padding: 0 30px 30px 30px;
         gap: 5rem;
     }
 

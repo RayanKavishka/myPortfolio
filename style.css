@@ -3184,6 +3184,7 @@ header {
     }
 
     .assign > div {
+        height: 142px;
         border: 4px solid var(--theme-color-blue);
     }
 

@@ -51,6 +51,158 @@ gsap.to(".overlay", {
 });
 
 
+// Cursor Effect
+const cursorCircle = document.querySelector(".cursor-circle");
+const aboutMeTxt = document.querySelector(".aboutMe");
+const aboutMePara = document.querySelector(".aboutMePara");
+const heroHelloTxt = document.querySelector(".heroHelloTxt");
+const kavishkaTxt = document.querySelector(".kavishkaTxt");
+
+const skillDesAll = document.querySelectorAll(".skillDes");
+const eduBackAll = document.querySelectorAll(".eduBack");
+
+const toolPara = document.querySelector(".toolPara");
+const hireParaContact = document.querySelector(".hireParaContact");
+
+document.addEventListener("mousemove", (e) => {
+    cursorCircle.style.left = `${e.clientX}px`;
+    cursorCircle.style.top = `${e.clientY}px`;
+});
+
+// =========================================================================================
+
+aboutMeTxt.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "320px";
+    cursorCircle.style.height = "320px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+aboutMeTxt.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+// =========================================================================================
+
+aboutMePara.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "100px";
+    cursorCircle.style.height = "100px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+aboutMePara.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+// =========================================================================================
+
+heroHelloTxt.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "150px";
+    cursorCircle.style.height = "150px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+heroHelloTxt.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+// =========================================================================================
+
+kavishkaTxt.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "150px";
+    cursorCircle.style.height = "150px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+kavishkaTxt.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+// =========================================================================================
+
+eduBackAll.forEach((eduBack) => {
+    eduBack.addEventListener("mouseenter", () => {
+        cursorCircle.style.width = "150px";
+        cursorCircle.style.height = "150px";
+        cursorCircle.style.backgroundColor = "#E10600";
+        cursorCircle.style.mixBlendMode = "difference";
+    });
+
+    eduBack.addEventListener("mouseleave", () => {
+        cursorCircle.style.width = "25px";
+        cursorCircle.style.height = "25px";
+        cursorCircle.style.backgroundColor = "#ffffff";
+        cursorCircle.style.mixBlendMode = "normal";
+    });
+});
+
+// =========================================================================================
+
+skillDesAll.forEach((skillDes) => {
+    skillDes.addEventListener("mouseenter", () => {
+        cursorCircle.style.width = "200px";
+        cursorCircle.style.height = "200px";
+        cursorCircle.style.backgroundColor = "#E10600";
+        cursorCircle.style.mixBlendMode = "difference";
+    });
+
+    skillDes.addEventListener("mouseleave", () => {
+        cursorCircle.style.width = "25px";
+        cursorCircle.style.height = "25px";
+        cursorCircle.style.backgroundColor = "#ffffff";
+        cursorCircle.style.mixBlendMode = "normal";
+    });
+});
+
+// =========================================================================================
+
+toolPara.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "200px";
+    cursorCircle.style.height = "200px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+toolPara.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+// =========================================================================================
+
+hireParaContact.addEventListener("mouseenter", () => {
+    cursorCircle.style.width = "250px";
+    cursorCircle.style.height = "250px";
+    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.mixBlendMode = "difference";
+});
+
+hireParaContact.addEventListener("mouseleave", () => {
+    cursorCircle.style.width = "25px";
+    cursorCircle.style.height = "25px";
+    cursorCircle.style.backgroundColor = "#ffffff";
+    cursorCircle.style.mixBlendMode = "normal";
+});
+
+
+
 // Header
 function burgerIconClick() {
     const nav = document.getElementById("defaultNav");

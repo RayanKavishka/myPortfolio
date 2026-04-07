@@ -14,6 +14,8 @@ body {
     flex-direction: column;
 
     overflow-x: hidden;
+
+    cursor: none;
 }
 
 * {
@@ -57,6 +59,23 @@ body {
     font-size: 20vw;
     font-family: "Thunder Black", sans-serif;
     font-weight: lighter;
+}
+
+
+/*======================================================================================================================================*/
+
+
+/* Cursor Effect */
+.cursor-circle {
+    position: fixed;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ffffff;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease;
+    z-index: 10001;
 }
 
 
@@ -1010,7 +1029,7 @@ header {
     text-align: center;
 }
 
-.aboutBottom > h1 {
+.aboutMe {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1747,7 +1766,6 @@ header {
 .card {
     transform-style: preserve-3d;
     transition: transform 1.5s ease-in-out;
-    cursor: pointer;
 }
 
 .card:hover, .card:active {
@@ -2113,8 +2131,6 @@ header {
     height: 80px;
     background: #ffffff;
     border-radius: 100%;
-
-    cursor: pointer;
 }
 
 .fa-arrow-left-long, .fa-arrow-right-long {
@@ -2421,7 +2437,6 @@ header {
     width: 80px;
     height: 80px;
     padding: 5px;
-    cursor: pointer;
     will-change: width, height;
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(10px);

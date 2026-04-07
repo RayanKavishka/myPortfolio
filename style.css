@@ -78,6 +78,17 @@ body {
     z-index: 10001;
 }
 
+/* Hide Cursor & Set Cursor Style Default From Mobile & Tablet Sizes */
+@media all and (max-width: 1024px) {
+    .cursor-circle {
+        display: none;
+    }
+
+    body {
+        cursor: auto;
+    }
+}
+
 
 /*======================================================================================================================================*/
 

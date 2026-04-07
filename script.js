@@ -53,9 +53,10 @@ gsap.to(".overlay", {
 
 // Cursor Effect
 const cursorCircle = document.querySelector(".cursor-circle");
+
+const sectionNavAll = document.querySelectorAll(".sectionNav");
 const aboutMeTxt = document.querySelector(".aboutMe");
 const aboutMePara = document.querySelector(".aboutMePara");
-const heroHelloTxt = document.querySelector(".heroHelloTxt");
 const kavishkaTxt = document.querySelector(".kavishkaTxt");
 
 const skillDesAll = document.querySelectorAll(".skillDes");
@@ -67,6 +68,24 @@ const hireParaContact = document.querySelector(".hireParaContact");
 document.addEventListener("mousemove", (e) => {
     cursorCircle.style.left = `${e.clientX}px`;
     cursorCircle.style.top = `${e.clientY}px`;
+});
+
+// =========================================================================================
+
+sectionNavAll.forEach((sectionNav) => {
+    sectionNav.addEventListener("mouseenter", () => {
+        cursorCircle.style.width = "100px";
+        cursorCircle.style.height = "100px";
+        cursorCircle.style.backgroundColor = "#E10600";
+        cursorCircle.style.mixBlendMode = "difference";
+    });
+
+    sectionNav.addEventListener("mouseleave", () => {
+        cursorCircle.style.width = "25px";
+        cursorCircle.style.height = "25px";
+        cursorCircle.style.backgroundColor = "#ffffff";
+        cursorCircle.style.mixBlendMode = "normal";
+    });
 });
 
 // =========================================================================================
@@ -95,22 +114,6 @@ aboutMePara.addEventListener("mouseenter", () => {
 });
 
 aboutMePara.addEventListener("mouseleave", () => {
-    cursorCircle.style.width = "25px";
-    cursorCircle.style.height = "25px";
-    cursorCircle.style.backgroundColor = "#ffffff";
-    cursorCircle.style.mixBlendMode = "normal";
-});
-
-// =========================================================================================
-
-heroHelloTxt.addEventListener("mouseenter", () => {
-    cursorCircle.style.width = "150px";
-    cursorCircle.style.height = "150px";
-    cursorCircle.style.backgroundColor = "#E10600";
-    cursorCircle.style.mixBlendMode = "difference";
-});
-
-heroHelloTxt.addEventListener("mouseleave", () => {
     cursorCircle.style.width = "25px";
     cursorCircle.style.height = "25px";
     cursorCircle.style.backgroundColor = "#ffffff";

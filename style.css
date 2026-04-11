@@ -3081,6 +3081,8 @@ header {
 
 /* assignment.html */
 #assignmentsSection {
+    cursor: default;
+
     width: 100%;
     height: auto;
     min-height: 50vh;

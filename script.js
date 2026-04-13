@@ -60,7 +60,6 @@ const aboutMePara = document.querySelector(".aboutMePara");
 const kavishkaTxt = document.querySelector(".kavishkaTxt");
 
 const skillDesAll = document.querySelectorAll(".skillDes");
-const eduBackAll = document.querySelectorAll(".eduBack");
 
 const toolPara = document.querySelector(".toolPara");
 const hireParaContact = document.querySelector(".hireParaContact");
@@ -93,7 +92,7 @@ sectionNavAll.forEach((sectionNav) => {
 aboutMeTxt.addEventListener("mouseenter", () => {
     cursorCircle.style.width = "320px";
     cursorCircle.style.height = "320px";
-    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.backgroundColor = "#ffffff";
     cursorCircle.style.mixBlendMode = "difference";
 });
 
@@ -109,7 +108,7 @@ aboutMeTxt.addEventListener("mouseleave", () => {
 aboutMePara.addEventListener("mouseenter", () => {
     cursorCircle.style.width = "100px";
     cursorCircle.style.height = "100px";
-    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.backgroundColor = "#ffffff";
     cursorCircle.style.mixBlendMode = "difference";
 });
 
@@ -125,7 +124,7 @@ aboutMePara.addEventListener("mouseleave", () => {
 kavishkaTxt.addEventListener("mouseenter", () => {
     cursorCircle.style.width = "150px";
     cursorCircle.style.height = "150px";
-    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.backgroundColor = "#ffffff";
     cursorCircle.style.mixBlendMode = "difference";
 });
 
@@ -138,29 +137,11 @@ kavishkaTxt.addEventListener("mouseleave", () => {
 
 // =========================================================================================
 
-eduBackAll.forEach((eduBack) => {
-    eduBack.addEventListener("mouseenter", () => {
-        cursorCircle.style.width = "150px";
-        cursorCircle.style.height = "150px";
-        cursorCircle.style.backgroundColor = "#E10600";
-        cursorCircle.style.mixBlendMode = "difference";
-    });
-
-    eduBack.addEventListener("mouseleave", () => {
-        cursorCircle.style.width = "25px";
-        cursorCircle.style.height = "25px";
-        cursorCircle.style.backgroundColor = "#ffffff";
-        cursorCircle.style.mixBlendMode = "normal";
-    });
-});
-
-// =========================================================================================
-
 skillDesAll.forEach((skillDes) => {
     skillDes.addEventListener("mouseenter", () => {
         cursorCircle.style.width = "200px";
         cursorCircle.style.height = "200px";
-        cursorCircle.style.backgroundColor = "#E10600";
+        cursorCircle.style.backgroundColor = "#ffffff";
         cursorCircle.style.mixBlendMode = "difference";
     });
 
@@ -177,7 +158,7 @@ skillDesAll.forEach((skillDes) => {
 toolPara.addEventListener("mouseenter", () => {
     cursorCircle.style.width = "200px";
     cursorCircle.style.height = "200px";
-    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.backgroundColor = "#ffffff";
     cursorCircle.style.mixBlendMode = "difference";
 });
 
@@ -193,7 +174,7 @@ toolPara.addEventListener("mouseleave", () => {
 hireParaContact.addEventListener("mouseenter", () => {
     cursorCircle.style.width = "250px";
     cursorCircle.style.height = "250px";
-    cursorCircle.style.backgroundColor = "#E10600";
+    cursorCircle.style.backgroundColor = "#ffffff";
     cursorCircle.style.mixBlendMode = "difference";
 });
 

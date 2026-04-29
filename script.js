@@ -845,7 +845,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// Skills Section
+// Contact Section
 // ===== Send Email By Submit Button =====
 (function () {
     emailjs.init({
@@ -875,13 +875,46 @@ function sendEmail(e) {
     if (isFilled) {
         emailjs.send("service_rgfzhmq", "template_uq06trp", params)
             .then(function () {
-                alert("Email has been sent");
+                Swal.fire({
+                    icon: "success",
+                    title: "Request sent successfully!",
+                    text: "We've received your request and will get back to you shortly.",
+                    background: "#242424",
+                    color: "#f0f0f0",
+                    confirmButtonText: "Got it",
+                    confirmButtonColor: "#1D9E75",
+                    width: 360,
+                    padding: "40px 44px 36px",
+                    showClass: {
+                        popup: "animate__animated animate__zoomIn animate__faster"
+                    },
+                    hideClass: {
+                        popup: "animate__animated animate__zoomOut animate__faster"
+                    }
+                });
+
                 document.getElementById("contactForm").reset();
             })
             .catch(function (error) {
                 alert("Failed to send");
             });
     } else {
-        alert("Fill all fields");
+        Swal.fire({
+            icon: "error",
+            title: "Oops! Please fill the form.",
+            text: "All required fields must be completed before submitting.",
+            background: "#242424",
+            color: "#f0f0f0",
+            confirmButtonText: "Got it",
+            confirmButtonColor: "#E24B4A",
+            width: 360,
+            padding: "40px 44px 36px",
+            showClass: {
+                popup: "animate__animated animate__zoomIn animate__faster"
+            },
+            hideClass: {
+                popup: "animate__animated animate__zoomOut animate__faster"
+            }
+        });
     }
 }
